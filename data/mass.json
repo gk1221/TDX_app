@@ -1,0 +1,942 @@
+{
+    "result": "success",
+    "data": {
+        "routes": [
+            {
+                "travel_time": 4661,
+                "start_time": "2024-05-02T06:56:22",
+                "day": 4,
+                "end_time": "2024-05-02T08:14:03",
+                "transfers": 0,
+                "sections": [
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 15
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 15,
+                            "length": 21.298153
+                        },
+                        "departure": {
+                            "time": "2024-05-02T06:56:22",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 25.047743,
+                                    "lng": 121.516273
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T06:56:37",
+                            "place": {
+                                "name": "\u81fa\u5317\u81fa\u5317 \u897f 2",
+                                "type": "entrance",
+                                "location": {
+                                    "lat": 25.04788,
+                                    "lng": 121.516289
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "pedestrian-station",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 203
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 203,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T06:56:37",
+                            "place": {
+                                "name": "\u81fa\u5317\u81fa\u5317 \u897f 2",
+                                "type": "entrance",
+                                "location": {
+                                    "lat": 25.04788,
+                                    "lng": 121.516289
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T07:00:00",
+                            "place": {
+                                "name": "\u81fa\u5317",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04771,
+                                    "lng": 121.517838
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "transit",
+                        "travelSummary": {
+                            "duration": 4260,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T07:00:00",
+                            "place": {
+                                "name": "\u81fa\u5317",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04771,
+                                    "lng": 121.517838
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:11:00",
+                            "place": {
+                                "name": "\u65b0\u7af9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.80172,
+                                    "lng": 120.971657
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "TRA",
+                            "name": "\u81ea\u5f37105",
+                            "category": "TRA",
+                            "headsign": "\u5c4f\u6771",
+                            "shortName": "\u81ea\u5f37105",
+                            "longName": "\u81ea\u5f37105",
+                            "route_color": "",
+                            "number": "",
+                            "type": "TRA",
+                            "city": "",
+                            "fareTW": 0,
+                            "uuid": "a2741f92-f5da-44ca-b2c3-4548252166ea"
+                        },
+                        "intermediateStops": [
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:08:00",
+                                    "place": {
+                                        "name": "\u677f\u6a4b",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.01404,
+                                            "lng": 121.464027
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:16:00",
+                                    "place": {
+                                        "name": "\u6a39\u6797",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.991211,
+                                            "lng": 121.424812
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:32:00",
+                                    "place": {
+                                        "name": "\u6843\u5712",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.98941,
+                                            "lng": 121.313988
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:42:00",
+                                    "place": {
+                                        "name": "\u4e2d\u58e2",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.95364,
+                                            "lng": 121.225594
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "agency": {
+                            "agency_id": "TRA",
+                            "name": "\u4ea4\u901a\u90e8\u81fa\u7063\u9435\u8def\u7ba1\u7406\u5c40",
+                            "website": "http://twtraffic.tra.gov.tw/twrail/",
+                            "reserve": "0",
+                            "phone": "(02)2381-5226\u30010800-765-888"
+                        }
+                    },
+                    {
+                        "type": "pedestrian-station",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 52
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 52,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T08:11:00",
+                            "place": {
+                                "name": "\u65b0\u7af9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.80172,
+                                    "lng": 120.971657
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:11:52",
+                            "place": {
+                                "name": "\u65b0\u7af9 ",
+                                "type": "exit",
+                                "location": {
+                                    "lat": 24.801689,
+                                    "lng": 120.971558
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 131
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 131,
+                            "length": 183.215515
+                        },
+                        "departure": {
+                            "time": "2024-05-02T08:11:52",
+                            "place": {
+                                "name": "\u65b0\u7af9 ",
+                                "type": "exit",
+                                "location": {
+                                    "lat": 24.801689,
+                                    "lng": 120.971558
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:14:03",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 24.80234,
+                                    "lng": 120.97049
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    }
+                ]
+            },
+            {
+                "travel_time": 5381,
+                "start_time": "2024-05-02T07:20:22",
+                "day": 4,
+                "end_time": "2024-05-02T08:50:03",
+                "transfers": 0,
+                "sections": [
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 15
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 15,
+                            "length": 21.298153
+                        },
+                        "departure": {
+                            "time": "2024-05-02T07:20:22",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 25.047743,
+                                    "lng": 121.516273
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T07:20:37",
+                            "place": {
+                                "name": "\u81fa\u5317\u81fa\u5317 \u897f 2",
+                                "type": "entrance",
+                                "location": {
+                                    "lat": 25.04788,
+                                    "lng": 121.516289
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "pedestrian-station",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 203
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 203,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T07:20:37",
+                            "place": {
+                                "name": "\u81fa\u5317\u81fa\u5317 \u897f 2",
+                                "type": "entrance",
+                                "location": {
+                                    "lat": 25.04788,
+                                    "lng": 121.516289
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T07:24:00",
+                            "place": {
+                                "name": "\u81fa\u5317",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04771,
+                                    "lng": 121.517838
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "transit",
+                        "travelSummary": {
+                            "duration": 4980,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T07:24:00",
+                            "place": {
+                                "name": "\u81fa\u5317",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04771,
+                                    "lng": 121.517838
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:47:00",
+                            "place": {
+                                "name": "\u65b0\u7af9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.80172,
+                                    "lng": 120.971657
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "TRA",
+                            "name": "\u5340\u9593\u5feb2007",
+                            "category": "TRA",
+                            "headsign": "\u4e8c\u6c34",
+                            "shortName": "\u5340\u9593\u5feb2007",
+                            "longName": "\u5340\u9593\u5feb2007",
+                            "route_color": "",
+                            "number": "",
+                            "type": "TRA",
+                            "city": "",
+                            "fareTW": 0,
+                            "uuid": "aeaf36d1-ee20-4629-a75b-36edb1f3b28c"
+                        },
+                        "intermediateStops": [
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:31:00",
+                                    "place": {
+                                        "name": "\u677f\u6a4b",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.01404,
+                                            "lng": 121.464027
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:38:00",
+                                    "place": {
+                                        "name": "\u6a39\u6797",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.991211,
+                                            "lng": 121.424812
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:47:00",
+                                    "place": {
+                                        "name": "\u9daf\u6b4c",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.954321,
+                                            "lng": 121.355347
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:55:00",
+                                    "place": {
+                                        "name": "\u6843\u5712",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.98941,
+                                            "lng": 121.313988
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:02:00",
+                                    "place": {
+                                        "name": "\u5167\u58e2",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.972811,
+                                            "lng": 121.258263
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:07:00",
+                                    "place": {
+                                        "name": "\u4e2d\u58e2",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.95364,
+                                            "lng": 121.225594
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:16:00",
+                                    "place": {
+                                        "name": "\u694a\u6885",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.914339,
+                                            "lng": 121.146446
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:26:00",
+                                    "place": {
+                                        "name": "\u6e56\u53e3",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.90292,
+                                            "lng": 121.044121
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:33:00",
+                                    "place": {
+                                        "name": "\u65b0\u8c50",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.86961,
+                                            "lng": 120.996536
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:38:00",
+                                    "place": {
+                                        "name": "\u7af9\u5317",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.838921,
+                                            "lng": 121.009361
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "agency": {
+                            "agency_id": "TRA",
+                            "name": "\u4ea4\u901a\u90e8\u81fa\u7063\u9435\u8def\u7ba1\u7406\u5c40",
+                            "website": "http://twtraffic.tra.gov.tw/twrail/",
+                            "reserve": "0",
+                            "phone": "(02)2381-5226\u30010800-765-888"
+                        }
+                    },
+                    {
+                        "type": "pedestrian-station",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 52
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 52,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T08:47:00",
+                            "place": {
+                                "name": "\u65b0\u7af9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.80172,
+                                    "lng": 120.971657
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:47:52",
+                            "place": {
+                                "name": "\u65b0\u7af9 ",
+                                "type": "exit",
+                                "location": {
+                                    "lat": 24.801689,
+                                    "lng": 120.971558
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 131
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 131,
+                            "length": 183.215515
+                        },
+                        "departure": {
+                            "time": "2024-05-02T08:47:52",
+                            "place": {
+                                "name": "\u65b0\u7af9 ",
+                                "type": "exit",
+                                "location": {
+                                    "lat": 24.801689,
+                                    "lng": 120.971558
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:50:03",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 24.80234,
+                                    "lng": 120.97049
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    }
+                ]
+            },
+            {
+                "travel_time": 5428,
+                "start_time": "2024-05-02T06:59:54",
+                "day": 4,
+                "end_time": "2024-05-02T08:30:22",
+                "transfers": 0,
+                "sections": [
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 186
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 186,
+                            "length": 258.591583
+                        },
+                        "departure": {
+                            "time": "2024-05-02T06:59:54",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 25.047743,
+                                    "lng": 121.516273
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T07:03:00",
+                            "place": {
+                                "name": "\u81fa\u5317\u8f49\u904b\u7ad9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04887,
+                                    "lng": 121.517609
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    },
+                    {
+                        "type": "transit",
+                        "travelSummary": {
+                            "duration": 4860,
+                            "length": 0
+                        },
+                        "departure": {
+                            "time": "2024-05-02T07:03:00",
+                            "place": {
+                                "name": "\u81fa\u5317\u8f49\u904b\u7ad9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 25.04887,
+                                    "lng": 121.517609
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:24:00",
+                            "place": {
+                                "name": "\u65b0\u7af9\u8f49\u904b\u7ad9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.801439,
+                                    "lng": 120.974083
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "HighwayBus",
+                            "name": "1822",
+                            "category": "HighwayBus",
+                            "headsign": "\u65b0\u7af9\u8f49\u904b\u7ad9",
+                            "shortName": "1822",
+                            "longName": "1822\u81fa\u5317\u8f49\u904b\u7ad9\u2192\u65b0\u7af9\u8f49\u904b\u7ad9",
+                            "route_color": "",
+                            "number": "1822",
+                            "type": "HighwayBus",
+                            "city": "",
+                            "fare": 145
+                        },
+                        "intermediateStops": [
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:07:00",
+                                    "place": {
+                                        "name": "\u975c\u4fee\u5973\u4e2d",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.05711,
+                                            "lng": 121.51506
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:09:00",
+                                    "place": {
+                                        "name": "\u6dbc\u5dde\u91cd\u6176\u8def\u53e3",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.060539,
+                                            "lng": 121.513527
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:10:00",
+                                    "place": {
+                                        "name": "\u6377\u904b\u5927\u6a4b\u982d\u7ad9",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.062607,
+                                            "lng": 121.513527
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:12:00",
+                                    "place": {
+                                        "name": "\u660c\u5409\u91cd\u6176\u8def\u53e3",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.065559,
+                                            "lng": 121.513733
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:13:00",
+                                    "place": {
+                                        "name": "\u6c11\u65cf\u91cd\u6176\u8def\u53e3",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.068491,
+                                            "lng": 121.513824
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:16:00",
+                                    "place": {
+                                        "name": "\u9152\u6cc9\u91cd\u6176\u8def\u53e3",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.07181,
+                                            "lng": 121.513824
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T07:16:30",
+                                    "place": {
+                                        "name": "\u5927\u9f8d\u5e02\u5834(\u555f\u8070\u5b78\u6821)",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 25.0749,
+                                            "lng": 121.51403
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:12:00",
+                                    "place": {
+                                        "name": "\u967d\u660e\u4ea4\u5927\u5149\u5fa9\u8def",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.7927,
+                                            "lng": 121.002388
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:15:00",
+                                    "place": {
+                                        "name": "\u6e05\u83ef\u5927\u5b78",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.797106,
+                                            "lng": 120.996704
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:17:00",
+                                    "place": {
+                                        "name": "\u99ac\u5055\u91ab\u9662",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.79936,
+                                            "lng": 120.992554
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:19:00",
+                                    "place": {
+                                        "name": "\u4e8c\u5206\u5c40",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.80168,
+                                            "lng": 120.985474
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "departure": {
+                                    "time": "2024-05-02T08:22:00",
+                                    "place": {
+                                        "name": "\u516c\u5712\u7ad9",
+                                        "type": "station",
+                                        "location": {
+                                            "lat": 24.802271,
+                                            "lng": 120.978378
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "agency": {
+                            "agency_id": "THB-1101",
+                            "name": "\u570b\u5149\u5ba2\u904b",
+                            "website": "http://www.kingbus.com.tw",
+                            "reserve": "0",
+                            "phone": "(02)2381-0731\u30010800-010138"
+                        }
+                    },
+                    {
+                        "type": "pedestrian",
+                        "actions": [
+                            {
+                                "action": "depart",
+                                "duration": 382
+                            },
+                            {
+                                "action": "arrive",
+                                "duration": 0
+                            }
+                        ],
+                        "travelSummary": {
+                            "duration": 382,
+                            "length": 531.813782
+                        },
+                        "departure": {
+                            "time": "2024-05-02T08:24:00",
+                            "place": {
+                                "name": "\u65b0\u7af9\u8f49\u904b\u7ad9",
+                                "type": "station",
+                                "location": {
+                                    "lat": 24.801439,
+                                    "lng": 120.974083
+                                }
+                            }
+                        },
+                        "arrival": {
+                            "time": "2024-05-02T08:30:22",
+                            "place": {
+                                "type": "place",
+                                "location": {
+                                    "lat": 24.80234,
+                                    "lng": 120.97049
+                                }
+                            }
+                        },
+                        "transport": {
+                            "mode": "pedestrian"
+                        }
+                    }
+                ],
+                "total_price": 145
+            }
+        ]
+    }
+}

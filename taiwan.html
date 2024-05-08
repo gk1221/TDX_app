@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e469510c0f40b1ba1ec5da178e6dc6d9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e469510c0f40b1ba1ec5da178e6dc6d9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e469510c0f40b1ba1ec5da178e6dc6d9 = L.map(
+                "map_e469510c0f40b1ba1ec5da178e6dc6d9",
+                {
+                    center: [23.800983, 120.772569],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7.3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f6c395740ba01f20214e0e1ca9c878ec = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_f6c395740ba01f20214e0e1ca9c878ec.addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+            var marker_dfdb86215519d74f7b514b979ebd4bbc = L.marker(
+                [22.336780548095703, 120.8965835571289],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_c136f4154511e0f8f253bb2791a78184 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb9a6d192a61be71927715eea792e1a0 = $(`<div id="html_eb9a6d192a61be71927715eea792e1a0" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 113年度愛來武遊迎豐飛武系列活動—沐夏-SUP趣味競賽暨樂活體驗營</h1><br>          <p>     1.全國水上趣味賽事2.特色表演3.武星...     </p>     </div>      </div>`)[0];
+                popup_c136f4154511e0f8f253bb2791a78184.setContent(html_eb9a6d192a61be71927715eea792e1a0);
+            
+        
+
+        marker_dfdb86215519d74f7b514b979ebd4bbc.bindPopup(popup_c136f4154511e0f8f253bb2791a78184)
+        ;
+
+        
+    
+    
+            var marker_505dbd35d746981778f337b69721819e = L.marker(
+                [26.143110275268555, 119.91219329833984],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_365e9136ed28a533e9ec9f7cfc12c438 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a976c6d0fc9c31091ad129056fa9a44 = $(`<div id="html_5a976c6d0fc9c31091ad129056fa9a44" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 馬祖年度節慶活動 (Matsu Festival Activities)</h1><br>          <p>     馬祖民俗節慶活動，最熱鬧的過年，一路到九...     </p>     </div>      </div>`)[0];
+                popup_365e9136ed28a533e9ec9f7cfc12c438.setContent(html_5a976c6d0fc9c31091ad129056fa9a44);
+            
+        
+
+        marker_505dbd35d746981778f337b69721819e.bindPopup(popup_365e9136ed28a533e9ec9f7cfc12c438)
+        ;
+
+        
+    
+    
+            var marker_e6ab250ba3d8331211ca8645ffee3dd9 = L.marker(
+                [25.2052001953125, 121.68779754638672],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_eaa29c09386afa6b7ebc0822a2bfff6c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0c8462bc2e1a4684d6425184668cfa2 = $(`<div id="html_e0c8462bc2e1a4684d6425184668cfa2" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 野柳神明淨港文化季</h1><br>          <p>     每逢元宵佳節，野柳獨特的神明淨港儀式總是...     </p>     </div>      </div>`)[0];
+                popup_eaa29c09386afa6b7ebc0822a2bfff6c.setContent(html_e0c8462bc2e1a4684d6425184668cfa2);
+            
+        
+
+        marker_e6ab250ba3d8331211ca8645ffee3dd9.bindPopup(popup_eaa29c09386afa6b7ebc0822a2bfff6c)
+        ;
+
+        
+    
+    
+            var marker_f60ee7e599078f229b92b55db6548282 = L.marker(
+                [23.811391830444336, 120.8560791015625],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_bd7b42d7f998af25ec9e5f7f77b869fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e437bb688a76ca7b8f5a2263ccec9a96 = $(`<div id="html_e437bb688a76ca7b8f5a2263ccec9a96" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 轉知南投縣水里鄉公所「「2024龍來水里宵暨台電節能宣導」元宵系列活動」公告</h1><br>          <p>     (一)燈區展示：113年2月1日（四）起...     </p>     </div>      </div>`)[0];
+                popup_bd7b42d7f998af25ec9e5f7f77b869fe.setContent(html_e437bb688a76ca7b8f5a2263ccec9a96);
+            
+        
+
+        marker_f60ee7e599078f229b92b55db6548282.bindPopup(popup_bd7b42d7f998af25ec9e5f7f77b869fe)
+        ;
+
+        
+    
+    
+            var marker_0d9a3583574401edfe3a23610269b134 = L.marker(
+                [23.510173797607422, 120.82379913330078],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_9ec808b8c5dc2d84beaa80dfd1e8d1d3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ba60b61e007540050b1d125bdca9b6c = $(`<div id="html_5ba60b61e007540050b1d125bdca9b6c" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023阿里山日出印象音樂會</h1><br>          <p>     阿里山是國內外知名觀賞日出的旅遊勝地的，...     </p>     </div>      </div>`)[0];
+                popup_9ec808b8c5dc2d84beaa80dfd1e8d1d3.setContent(html_5ba60b61e007540050b1d125bdca9b6c);
+            
+        
+
+        marker_0d9a3583574401edfe3a23610269b134.bindPopup(popup_9ec808b8c5dc2d84beaa80dfd1e8d1d3)
+        ;
+
+        
+    
+    
+            var marker_6541d07ab8f4d97bf449dc54ff31a5a6 = L.marker(
+                [24.058774948120117, 121.16354370117188],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_90ba5fdcfa87d085f6dd8cf4650aa5d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0755e5c254e8d7e9bf3c82572f0e030e = $(`<div id="html_0755e5c254e8d7e9bf3c82572f0e030e" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023奔羊節</h1><br>          <p>     清境農場溯自民國50年（西元1961年）...     </p>     </div>      </div>`)[0];
+                popup_90ba5fdcfa87d085f6dd8cf4650aa5d9.setContent(html_0755e5c254e8d7e9bf3c82572f0e030e);
+            
+        
+
+        marker_6541d07ab8f4d97bf449dc54ff31a5a6.bindPopup(popup_90ba5fdcfa87d085f6dd8cf4650aa5d9)
+        ;
+
+        
+    
+    
+            var marker_9418564f983d77434abdf4320a40b7e7 = L.marker(
+                [23.85733413696289, 120.9159164428711],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_cc691dcd11bf13cff21d5b211afbe860 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47198e15a3c385f000a0a4e0c45ffdc8 = $(`<div id="html_47198e15a3c385f000a0a4e0c45ffdc8" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023日月潭國際萬人泳渡</h1><br>          <p>     起始於民國72年（西元1983年）的日月...     </p>     </div>      </div>`)[0];
+                popup_cc691dcd11bf13cff21d5b211afbe860.setContent(html_47198e15a3c385f000a0a4e0c45ffdc8);
+            
+        
+
+        marker_9418564f983d77434abdf4320a40b7e7.bindPopup(popup_cc691dcd11bf13cff21d5b211afbe860)
+        ;
+
+        
+    
+    
+            var marker_4d41c5137c375d5f04b1787fba405827 = L.marker(
+                [23.949291229248047, 120.69622039794922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_20ba72c8cc3feaede98469e9d02f76c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22704973ca1b28254bba18cc04afdba7 = $(`<div id="html_22704973ca1b28254bba18cc04afdba7" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023南投世界茶業博覽會</h1><br>          <p>     南投有八大茶區，更是台灣茶葉主要產地，活...     </p>     </div>      </div>`)[0];
+                popup_20ba72c8cc3feaede98469e9d02f76c9.setContent(html_22704973ca1b28254bba18cc04afdba7);
+            
+        
+
+        marker_4d41c5137c375d5f04b1787fba405827.bindPopup(popup_20ba72c8cc3feaede98469e9d02f76c9)
+        ;
+
+        
+    
+    
+            var marker_cc145be287461f46f003bd8542468043 = L.marker(
+                [23.864501953125, 120.91191864013672],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_21e59a026620a6187bc33e9e5e86af0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d390288e2baf8b5e7a047976ad12659a = $(`<div id="html_d390288e2baf8b5e7a047976ad12659a" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023日月潭Come!BikeDay花火音樂嘉年華</h1><br>          <p>     日月潭花火音樂嘉年華系列活動自民國97年...     </p>     </div>      </div>`)[0];
+                popup_21e59a026620a6187bc33e9e5e86af0b.setContent(html_d390288e2baf8b5e7a047976ad12659a);
+            
+        
+
+        marker_cc145be287461f46f003bd8542468043.bindPopup(popup_21e59a026620a6187bc33e9e5e86af0b)
+        ;
+
+        
+    
+    
+            var marker_18c73c0d0cafc126da88b34b958c8323 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_d0dcfff1ccfb3a61c07a48c165cfa92f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fec962c9a86122fa40da332141f9838e = $(`<div id="html_fec962c9a86122fa40da332141f9838e" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022 日月潭櫻花季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_d0dcfff1ccfb3a61c07a48c165cfa92f.setContent(html_fec962c9a86122fa40da332141f9838e);
+            
+        
+
+        marker_18c73c0d0cafc126da88b34b958c8323.bindPopup(popup_d0dcfff1ccfb3a61c07a48c165cfa92f)
+        ;
+
+        
+    
+    
+            var marker_35bc6295663fb2451c920f9d4c541e62 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_a2bbc241ad51e3a68adecc76e1600cd4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6316c1a579d4c9fc606ca88be0e2fb36 = $(`<div id="html_6316c1a579d4c9fc606ca88be0e2fb36" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭星光螢火季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_a2bbc241ad51e3a68adecc76e1600cd4.setContent(html_6316c1a579d4c9fc606ca88be0e2fb36);
+            
+        
+
+        marker_35bc6295663fb2451c920f9d4c541e62.bindPopup(popup_a2bbc241ad51e3a68adecc76e1600cd4)
+        ;
+
+        
+    
+    
+            var marker_156e9cc412d562db856f3b9e0db9f7bf = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_9955eebd67d062eb805c9a0533bed083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_612cd25bdc5fd2ea2edafd0aca02b5a3 = $(`<div id="html_612cd25bdc5fd2ea2edafd0aca02b5a3" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭櫻舞飛揚環湖路跑【活動取消】</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_9955eebd67d062eb805c9a0533bed083.setContent(html_612cd25bdc5fd2ea2edafd0aca02b5a3);
+            
+        
+
+        marker_156e9cc412d562db856f3b9e0db9f7bf.bindPopup(popup_9955eebd67d062eb805c9a0533bed083)
+        ;
+
+        
+    
+    
+            var marker_7f7a45e5b19d40cf27f21669e94af6a4 = L.marker(
+                [23.867769241333008, 120.91619110107422],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_1a3e16c8f1f1122e385b8e6e39958857 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_682da7e06a5f8d1dcc828a3aba162e44 = $(`<div id="html_682da7e06a5f8d1dcc828a3aba162e44" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭萬人泳渡嘉年華</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_1a3e16c8f1f1122e385b8e6e39958857.setContent(html_682da7e06a5f8d1dcc828a3aba162e44);
+            
+        
+
+        marker_7f7a45e5b19d40cf27f21669e94af6a4.bindPopup(popup_1a3e16c8f1f1122e385b8e6e39958857)
+        ;
+
+        
+    
+    
+            var marker_ce4677d8cf21a0c7d6592925626bb647 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_646914f0556aad4ad32405ae23e6466d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7cc27eeeced46a4ebc825d38e21e2415 = $(`<div id="html_7cc27eeeced46a4ebc825d38e21e2415" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭Come!BikeDay花火音樂嘉年華</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_646914f0556aad4ad32405ae23e6466d.setContent(html_7cc27eeeced46a4ebc825d38e21e2415);
+            
+        
+
+        marker_ce4677d8cf21a0c7d6592925626bb647.bindPopup(popup_646914f0556aad4ad32405ae23e6466d)
+        ;
+
+        
+    
+    
+            var marker_787aed6d84ebe5f585622f33d3f96798 = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_e4f73823a202fd1385f806c9525b54c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b86bd1c30eb81ea3b0f439fa5948aea9 = $(`<div id="html_b86bd1c30eb81ea3b0f439fa5948aea9" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭婚禮【日月相映，情定日月潭】</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_e4f73823a202fd1385f806c9525b54c9.setContent(html_b86bd1c30eb81ea3b0f439fa5948aea9);
+            
+        
+
+        marker_787aed6d84ebe5f585622f33d3f96798.bindPopup(popup_e4f73823a202fd1385f806c9525b54c9)
+        ;
+
+        
+    
+    
+            var marker_aa3fdf256964bd3a56a7f5ef18d07ca5 = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_2ba29999b3f3945f6a18375077460223 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_096776a5f13035fb5e00ce131e52524d = $(`<div id="html_096776a5f13035fb5e00ce131e52524d" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2022日月潭Come!Bikeday自行車嘉年華</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_2ba29999b3f3945f6a18375077460223.setContent(html_096776a5f13035fb5e00ce131e52524d);
+            
+        
+
+        marker_aa3fdf256964bd3a56a7f5ef18d07ca5.bindPopup(popup_2ba29999b3f3945f6a18375077460223)
+        ;
+
+        
+    
+    
+            var marker_d786681f2085899bb7fa9e17b79ebefd = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_24af458dc38f60072882e3882c9b069b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aafa1d252a4a797dad98545bfefdf124 = $(`<div id="html_aafa1d252a4a797dad98545bfefdf124" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023 日月潭櫻花季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_24af458dc38f60072882e3882c9b069b.setContent(html_aafa1d252a4a797dad98545bfefdf124);
+            
+        
+
+        marker_d786681f2085899bb7fa9e17b79ebefd.bindPopup(popup_24af458dc38f60072882e3882c9b069b)
+        ;
+
+        
+    
+    
+            var marker_1ab6f57ad13b920c7ba61c106003b6dd = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_83d053d074d84835d31ce5fd23df124e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8637c8c1347a0bb5e8dea30709b7baff = $(`<div id="html_8637c8c1347a0bb5e8dea30709b7baff" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2023 日月潭星光螢火季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_83d053d074d84835d31ce5fd23df124e.setContent(html_8637c8c1347a0bb5e8dea30709b7baff);
+            
+        
+
+        marker_1ab6f57ad13b920c7ba61c106003b6dd.bindPopup(popup_83d053d074d84835d31ce5fd23df124e)
+        ;
+
+        
+    
+    
+            var marker_a68a133bde0752a48c51d8d99ae5b529 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_fdc5dfb2d33fc393ad6d756b3757580f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6108e127d17f851d7c3088537acffab2 = $(`<div id="html_6108e127d17f851d7c3088537acffab2" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024日月潭跨年晚會-日月煙火幸福一世</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_fdc5dfb2d33fc393ad6d756b3757580f.setContent(html_6108e127d17f851d7c3088537acffab2);
+            
+        
+
+        marker_a68a133bde0752a48c51d8d99ae5b529.bindPopup(popup_fdc5dfb2d33fc393ad6d756b3757580f)
+        ;
+
+        
+    
+    
+            var marker_199137d6ee31b5679d168cada0daa42c = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_bdab8940e13048ef10943094eaf5b2a1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d0d269c8c0416724fdb63c0161581cd = $(`<div id="html_2d0d269c8c0416724fdb63c0161581cd" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭櫻舞飛揚環湖路跑</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_bdab8940e13048ef10943094eaf5b2a1.setContent(html_2d0d269c8c0416724fdb63c0161581cd);
+            
+        
+
+        marker_199137d6ee31b5679d168cada0daa42c.bindPopup(popup_bdab8940e13048ef10943094eaf5b2a1)
+        ;
+
+        
+    
+    
+            var marker_6cf3746796c10c4e0a7a9a2300a0cb89 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_a5b3e1a441234b233d3b3835bc081e8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e7f95d91e3a54a6001e8600c3423add1 = $(`<div id="html_e7f95d91e3a54a6001e8600c3423add1" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭櫻花季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_a5b3e1a441234b233d3b3835bc081e8f.setContent(html_e7f95d91e3a54a6001e8600c3423add1);
+            
+        
+
+        marker_6cf3746796c10c4e0a7a9a2300a0cb89.bindPopup(popup_a5b3e1a441234b233d3b3835bc081e8f)
+        ;
+
+        
+    
+    
+            var marker_d59bf7a8d4c6df15179884351cd16b0c = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_013cb88b00cbf2a7295de3bec948e709 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b5c97f993be5484683aa692ac624d95 = $(`<div id="html_3b5c97f993be5484683aa692ac624d95" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭星光螢火季</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_013cb88b00cbf2a7295de3bec948e709.setContent(html_3b5c97f993be5484683aa692ac624d95);
+            
+        
+
+        marker_d59bf7a8d4c6df15179884351cd16b0c.bindPopup(popup_013cb88b00cbf2a7295de3bec948e709)
+        ;
+
+        
+    
+    
+            var marker_318deee7da5bc493a97819d4e7614190 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_7a97addfcc8f971d8e3123953470f896 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f5b3eddc99061e15b143684c5fe0ba29 = $(`<div id="html_f5b3eddc99061e15b143684c5fe0ba29" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭Come!BikeDay 自行車系列活動</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_7a97addfcc8f971d8e3123953470f896.setContent(html_f5b3eddc99061e15b143684c5fe0ba29);
+            
+        
+
+        marker_318deee7da5bc493a97819d4e7614190.bindPopup(popup_7a97addfcc8f971d8e3123953470f896)
+        ;
+
+        
+    
+    
+            var marker_c6166b091f4bba0683532307832aa268 = L.marker(
+                [23.867769241333008, 120.91619110107422],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_0e456f4d3ede5855f30cfc27ab005501 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_752489a4bc8189976eb50269bee00bbe = $(`<div id="html_752489a4bc8189976eb50269bee00bbe" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭國際萬人泳渡嘉年華</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_0e456f4d3ede5855f30cfc27ab005501.setContent(html_752489a4bc8189976eb50269bee00bbe);
+            
+        
+
+        marker_c6166b091f4bba0683532307832aa268.bindPopup(popup_0e456f4d3ede5855f30cfc27ab005501)
+        ;
+
+        
+    
+    
+            var marker_0b1c6aa1c9c0284862206db543c3c8f9 = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_de2e1be1fbfb7c2595defbc181a62ef1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a865306e7f71734f0bc800c217546615 = $(`<div id="html_a865306e7f71734f0bc800c217546615" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭花火音樂嘉年華</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_de2e1be1fbfb7c2595defbc181a62ef1.setContent(html_a865306e7f71734f0bc800c217546615);
+            
+        
+
+        marker_0b1c6aa1c9c0284862206db543c3c8f9.bindPopup(popup_de2e1be1fbfb7c2595defbc181a62ef1)
+        ;
+
+        
+    
+    
+            var marker_16bec8e43280d8ad9e620b4fcaa9e75d = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_6c99a8605650b62f3d4ecd0f7f6ec3dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10821015649ccda652bb39276badbd44 = $(`<div id="html_10821015649ccda652bb39276badbd44" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024 日月潭觀光圈成果發表會</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_6c99a8605650b62f3d4ecd0f7f6ec3dc.setContent(html_10821015649ccda652bb39276badbd44);
+            
+        
+
+        marker_16bec8e43280d8ad9e620b4fcaa9e75d.bindPopup(popup_6c99a8605650b62f3d4ecd0f7f6ec3dc)
+        ;
+
+        
+    
+    
+            var marker_edce4fd8812934006efea417699041af = L.marker(
+                [23.857330322265625, 120.91590881347656],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_0e52d1c233cee8252b985ab38c51da85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c8a4d476b3394deea6b8a791ffd645ef = $(`<div id="html_c8a4d476b3394deea6b8a791ffd645ef" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2025 日月潭跨年晚會</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_0e52d1c233cee8252b985ab38c51da85.setContent(html_c8a4d476b3394deea6b8a791ffd645ef);
+            
+        
+
+        marker_edce4fd8812934006efea417699041af.bindPopup(popup_0e52d1c233cee8252b985ab38c51da85)
+        ;
+
+        
+    
+    
+            var marker_81a0b04da7c0ffdbc8e03a12335feb7b = L.marker(
+                [23.832630157470703, 120.86573791503906],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_ada044e2f3fcbdd181b7a2f68a3ba849 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3273841c1362381ec7b22a779e6f649b = $(`<div id="html_3273841c1362381ec7b22a779e6f649b" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 集集鐵道音樂會</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_ada044e2f3fcbdd181b7a2f68a3ba849.setContent(html_3273841c1362381ec7b22a779e6f649b);
+            
+        
+
+        marker_81a0b04da7c0ffdbc8e03a12335feb7b.bindPopup(popup_ada044e2f3fcbdd181b7a2f68a3ba849)
+        ;
+
+        
+    
+    
+            var marker_c864c96e2d7eec13873e50cbc9e638ab = L.marker(
+                [23.851640701293945, 120.90178680419922],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_1ec2ee661d295ea2efa6504082a839a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9191a79c5ace7f9b364b125fb9e597b = $(`<div id="html_f9191a79c5ace7f9b364b125fb9e597b" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 2024年玉山星空音樂會-日月潭樂章篇</h1><br>          <p>     無...     </p>     </div>      </div>`)[0];
+                popup_1ec2ee661d295ea2efa6504082a839a4.setContent(html_f9191a79c5ace7f9b364b125fb9e597b);
+            
+        
+
+        marker_c864c96e2d7eec13873e50cbc9e638ab.bindPopup(popup_1ec2ee661d295ea2efa6504082a839a4)
+        ;
+
+        
+    
+    
+            var marker_1626b82a0024210f322fca40ec2a71fd = L.marker(
+                [23.488759994506836, 120.44676208496094],
+                {}
+            ).addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+        var popup_f62962b62a98fa8328c5ef92ad06f0fa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e8f324147b3375d54d94575f076b5a1 = $(`<div id="html_3e8f324147b3375d54d94575f076b5a1" style="width: 100.0%; height: 100.0%;">     <div style="width:400px;height:400px">         <h1> 點水成金-金門水文化特展</h1><br>          <p>     人類的文明發展及族群遷徙皆與水息息相關，...     </p>     </div>      </div>`)[0];
+                popup_f62962b62a98fa8328c5ef92ad06f0fa.setContent(html_3e8f324147b3375d54d94575f076b5a1);
+            
+        
+
+        marker_1626b82a0024210f322fca40ec2a71fd.bindPopup(popup_f62962b62a98fa8328c5ef92ad06f0fa)
+        ;
+
+        
+    
+    
+            tile_layer_f6c395740ba01f20214e0e1ca9c878ec.addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+    
+            tile_layer_f6c395740ba01f20214e0e1ca9c878ec.addTo(map_e469510c0f40b1ba1ec5da178e6dc6d9);
+        
+</script>
+</html>
