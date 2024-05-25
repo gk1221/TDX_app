@@ -3,8 +3,13 @@ import json
 import datetime
 
 #從網站上獲取資料上的key
-app_id = '112971008-def591cb-971c-42af'
-app_key = 'a7ab845a-c31c-4cee-ba13-b57fd610daae'
+# app_id = '112971008-def591cb-971c-42af'
+# app_key = 'a7ab845a-c31c-4cee-ba13-b57fd610daae'
+
+#class
+app_id = 'sssun-09d597db-5ec8-446e'
+app_key = '8ffe4bd6-dc2e-40e1-8f9e-2c5d62e13ab1'
+
 #要查詢的ＡＰＩ、參數
 #bus_description = "https://tdx.transportdata.tw/api/basic/v2/Bus/RealTimeByFrequency/City/Taipei/{}?%24top=30&%24format=JSON".format(bus)
 #獲取資料的class
