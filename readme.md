@@ -13,10 +13,4 @@ Bus-hot.html
   pip install geopy
   pip insall
   ```
-
-```
-- 打開前端
-- 測試
-```
-
-python bus-flask.py
+- 打開網頁測試
