@@ -1,0 +1,22 @@
+{
+    "UpdateTime": "2024-05-22T01:39:58+08:00",
+    "UpdateInterval": 21600,
+    "SrcUpdateTime": "2024-05-22T00:00:00+08:00",
+    "SrcUpdateInterval": 86400,
+    "AuthorityCode": "TPE",
+    "CCTVs": [
+        {
+            "CCTVID": "T000071",
+            "LinkID": "6002960300020A",
+            "VideoStreamURL": "http://172.16.3.161/live/index.html?ccd_id=71",
+            "LocationType": 1,
+            "PositionLon": 121.49797,
+            "PositionLat": 25.09373,
+            "SurveillanceType": -1,
+            "RoadID": "600296A",
+            "RoadName": "\u5ef6\u5e73\u5317\u8def\u516d\u6bb5",
+            "RoadClass": 6,
+            "RoadDirection": "SE"
+        }
+    ]
+}

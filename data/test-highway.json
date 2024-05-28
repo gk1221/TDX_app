@@ -1,0 +1,3604 @@
+{
+    "UpdateTime": "2024-05-24T11:40:21+08:00",
+    "UpdateInterval": 21600,
+    "SrcUpdateTime": "2024-05-24T00:00:00+08:00",
+    "SrcUpdateInterval": 86400,
+    "AuthorityCode": "NFB",
+    "LinkVersion": "24.02.1",
+    "CCTVs": [
+        {
+            "CCTVID": "CCTV-N3K-N-0.270-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "3000260100118C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=95020",
+            "LocationType": 1,
+            "PositionLon": 121.736574,
+            "PositionLat": 25.152457,
+            "RoadID": "300026",
+            "RoadName": "\u53f02\u5df1\u7dda",
+            "RoadClass": 3,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u5fb7\u5b89\u8def\u4ea4\u6d41\u9053",
+                "End": "\u57fa\u9686\u6e2f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "0K+270"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-57.738-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0105700H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15771",
+            "LocationType": 1,
+            "PositionLon": 121.23436,
+            "PositionLat": 24.985104,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e2d\u58e2\u8f49\u63a5\u4e00\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "57K+738"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-53.710-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0005300H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15370",
+            "LocationType": 1,
+            "PositionLon": 121.26239,
+            "PositionLat": 25.010677,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u8f49\u63a5\u4e00\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "53K+710"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-345.000-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100134500E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=477",
+            "LocationType": 1,
+            "PositionLon": 120.30892,
+            "PositionLat": 22.826277,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5ca1\u5c71\u4ea4\u6d41\u9053",
+                "End": "\u9ad8\u79d1\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "345K+000"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-105.700-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300010500O",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=40570",
+            "LocationType": 1,
+            "PositionLon": 120.940217,
+            "PositionLat": 24.753328,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u8304\u82f3\u4ea4\u6d41\u9053",
+                "End": "\u9999\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "105K+700"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-19.310-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300001950F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=71930",
+            "LocationType": 1,
+            "PositionLon": 121.5969115,
+            "PositionLat": 25.01185852,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5357\u6df1\u8def\u4ea4\u6d41\u9053",
+                "End": "\u6728\u67f5\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+310"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-342.435-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100034210E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=406",
+            "LocationType": 1,
+            "PositionLon": 120.295092,
+            "PositionLat": 22.845628,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9ad8\u79d1\u4ea4\u6d41\u9053",
+                "End": "\u5ca1\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "342K+435"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-3.819-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500100380F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800401",
+            "LocationType": 1,
+            "PositionLon": 121.64589,
+            "PositionLat": 25.010132,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u77f3\u7887\u4ea4\u6d41\u9053",
+                "End": "\u5357\u6e2f\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "3K+819"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-229.664-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300022920M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1106",
+            "LocationType": 0,
+            "PositionLon": 120.69601,
+            "PositionLat": 23.912224,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "229K+664"
+        },
+        {
+            "CCTVID": "CCTV-N5-S-11.881-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500001100F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510110801",
+            "LocationType": 1,
+            "PositionLon": 121.68869,
+            "PositionLat": 24.955185,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u77f3\u7887\u4ea4\u6d41\u9053",
+                "End": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "11K+881"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-21.880-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400002096B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=859",
+            "LocationType": 1,
+            "PositionLon": 120.739896,
+            "PositionLat": 24.239652,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "21K+880"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-9.770-M-\u6c50\u6b62\u5730\u78c5\u7ad9",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100100900F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=10970",
+            "LocationType": 1,
+            "PositionLon": 121.66245,
+            "PositionLat": 25.077675,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "9K+770"
+        },
+        {
+            "CCTVID": "CCTV-N4-W-20.520-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400102030B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=893",
+            "LocationType": 1,
+            "PositionLon": 120.749465,
+            "PositionLat": 24.248786,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u6f6d\u5b50\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u52e2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "20K+520"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-385.803-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300038500E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=305",
+            "LocationType": 1,
+            "PositionLon": 120.43965,
+            "PositionLat": 22.769772,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e5d\u5982\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "385K+803"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-31.200-I-\u5b89\u5751\u4ea4\u6d41\u9053",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000301010120F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=33120",
+            "LocationType": 1,
+            "PositionLon": 121.52407,
+            "PositionLat": 24.970621,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5b89\u5751\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u548c\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "31K+200"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-43.390-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0004300H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=14330",
+            "LocationType": 1,
+            "PositionLon": 121.34327,
+            "PositionLat": 25.065561,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "43K+390"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-32.972-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A1105000F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13290",
+            "LocationType": 1,
+            "PositionLon": 121.438614,
+            "PositionLat": 25.068056,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u4e94\u80a1\u8f49\u63a5\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "32K+972"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-275.553-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100027580D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=460",
+            "LocationType": 1,
+            "PositionLon": 120.35504,
+            "PositionLat": 23.400757,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5609\u7fa9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u71df\u670d\u52d9\u5340"
+            },
+            "LocationMile": "275K+553"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-39.470-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100103900F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13940",
+            "LocationType": 1,
+            "PositionLon": 121.382,
+            "PositionLat": 25.06445,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "39K+470"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-414.971-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300041400T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=344",
+            "LocationType": 1,
+            "PositionLon": 120.52642,
+            "PositionLat": 22.578869,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9e9f\u6d1b\u4ea4\u6d41\u9053",
+                "End": "\u7af9\u7530\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "414K+971"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-204.294-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300120400B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=28",
+            "LocationType": 1,
+            "PositionLon": 120.62251,
+            "PositionLat": 24.082937,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u70cf\u65e5\u4ea4\u6d41\u9053",
+                "End": "\u5feb\u5b98\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "204K+294"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-106.400-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300010600O",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=40640",
+            "LocationType": 1,
+            "PositionLon": 120.93306,
+            "PositionLat": 24.752222,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u8304\u82f3\u4ea4\u6d41\u9053",
+                "End": "\u9999\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "106K+400"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-383.450-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300038370E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=329",
+            "LocationType": 1,
+            "PositionLon": 120.427299,
+            "PositionLat": 22.780677,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e5d\u5982\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "383K+450"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-208.300-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100020830N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=413",
+            "LocationType": 1,
+            "PositionLon": 120.50651,
+            "PositionLat": 23.979082,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u57d4\u9e7d\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u54e1\u6797\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "208K+300"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-106.400-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100010600O",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=352",
+            "LocationType": 1,
+            "PositionLon": 120.93438,
+            "PositionLat": 24.722942,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u982d\u4efd\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "106K+400"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-170.980-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100117000B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=207",
+            "LocationType": 1,
+            "PositionLon": 120.6825,
+            "PositionLat": 24.223473,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5927\u96c5\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u539f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "170K+980"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-373.315-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300137300E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1040",
+            "LocationType": 1,
+            "PositionLon": 120.38026,
+            "PositionLat": 22.852985,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u7530\u5bee\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "373K+315"
+        },
+        {
+            "CCTVID": "CCTV-N2-E-3.350-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000200000300H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=20330",
+            "LocationType": 1,
+            "PositionLon": 121.223333,
+            "PositionLat": 25.038889,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u5927\u5712\u4ea4\u6d41\u9053",
+                "End": "\u5927\u7af9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "3K+350"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-285.420-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300128500Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1020",
+            "LocationType": 1,
+            "PositionLon": 120.50327,
+            "PositionLat": 23.54613,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u7af9\u5d0e\u4ea4\u6d41\u9053",
+                "End": "\u6885\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "285K+420"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-0.300-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100000000C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=10030",
+            "LocationType": 1,
+            "PositionLon": 121.73355,
+            "PositionLat": 25.120283,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "0K+300"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-25.971-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400002600B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=869",
+            "LocationType": 1,
+            "PositionLon": 120.71756,
+            "PositionLat": 24.214548,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "25K+971"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-0.230-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100000000C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=10020",
+            "LocationType": 1,
+            "PositionLon": 121.7333758,
+            "PositionLat": 25.1209011,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u57fa\u9686\u4ea4\u6d41\u9053",
+                "End": "\u57fa\u9686\u7aef"
+            },
+            "LocationMile": "0K+230"
+        },
+        {
+            "CCTVID": "CCTV-N10-E-10.670-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0001000001000E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=457",
+            "LocationType": 1,
+            "PositionLon": 120.3617535,
+            "PositionLat": 22.73854509,
+            "RoadID": "000100",
+            "RoadName": "\u570b\u905310\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u4ec1\u6b66\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "10K+670"
+        },
+        {
+            "CCTVID": "CCTV-N1K-W-2.920-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "6206302700155E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=411",
+            "LocationType": 1,
+            "PositionLon": 120.322404,
+            "PositionLat": 22.5691272,
+            "RoadID": "620630E",
+            "RoadName": "\u65b0\u751f\u8def",
+            "RoadClass": 6,
+            "RoadDirection": "NW",
+            "RoadSection": {
+                "Start": "\u4e09\u3001\u4e94\u7ba1\u5236\u7ad9",
+                "End": "\u904e\u6e2f\u96a7\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "2K+920"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-21.150-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500102100F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510211401",
+            "LocationType": 1,
+            "PositionLon": 121.75414,
+            "PositionLat": 24.899569,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u982d\u57ce\u4ea4\u6d41\u9053",
+                "End": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "21K+150"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-202.970-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300120200N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=450",
+            "LocationType": 0,
+            "PositionLon": 120.60921,
+            "PositionLat": 24.087158,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "202K+970"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-124.493-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300012410K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=249",
+            "LocationType": 1,
+            "PositionLon": 120.818085,
+            "PositionLat": 24.636745,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7af9\u5357\u4ea4\u6d41\u9053",
+                "End": "\u5927\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "124K+493"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-283.400-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300028300Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=197",
+            "LocationType": 1,
+            "PositionLon": 120.504944,
+            "PositionLat": 23.564166,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6885\u5c71\u4ea4\u6d41\u9053",
+                "End": "\u7af9\u5d0e\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "283K+400"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-252.950-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100125300Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=374",
+            "LocationType": 1,
+            "PositionLon": 120.431832,
+            "PositionLat": 23.588397,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6c11\u96c4\u4ea4\u6d41\u9053",
+                "End": "\u5927\u6797\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "252K+950"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-17.090-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300101700A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=31700",
+            "LocationType": 1,
+            "PositionLon": 121.611098,
+            "PositionLat": 25.030098,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6728\u67f5\u4ea4\u6d41\u9053",
+                "End": "\u5357\u6df1\u8def\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "17K+090"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-184.828-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300018400B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=366",
+            "LocationType": 1,
+            "PositionLon": 120.55535,
+            "PositionLat": 24.188166,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9f8d\u4e95\u4ea4\u6d41\u9053",
+                "End": "\u548c\u7f8e\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "184K+828"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-264.255-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "4015900001382I",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=363",
+            "LocationType": 1,
+            "PositionLon": 120.3920826,
+            "PositionLat": 23.49457078,
+            "RoadID": "401590",
+            "RoadName": "159",
+            "RoadClass": 4,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5609\u7fa9\u4ea4\u6d41\u9053",
+                "End": "\u6c11\u96c4\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "264K+255"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-16.380-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A0101600A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11630",
+            "LocationType": 1,
+            "PositionLon": 121.598724,
+            "PositionLat": 25.06354,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5824\u9802\u4ea4\u6d41\u9053",
+                "End": "\u6c50\u6b62\u7aef"
+            },
+            "LocationMile": "16K+380"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-76.000-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300107600J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=37600",
+            "LocationType": 1,
+            "PositionLon": 121.19861,
+            "PositionLat": 24.803888,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u95dc\u897f\u670d\u52d9\u5340",
+                "End": "\u9f8d\u6f6d\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "76K+000"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-45.980-M-\u6a39\u6797\u5730\u78c5\u7ad9",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300004570F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=34590",
+            "LocationType": 1,
+            "PositionLon": 121.400955,
+            "PositionLat": 24.950916,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "45K+980"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-99.080-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300109900J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=39900",
+            "LocationType": 1,
+            "PositionLon": 121.003075,
+            "PositionLat": 24.756884,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5bf6\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "99K+080"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-7.590-M-\u6771\u8349\u5c6f\u897f\u5730\u78c5\u7ad9",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600100750M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=443",
+            "LocationType": 1,
+            "PositionLon": 120.739456,
+            "PositionLat": 24.000326,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u570b\u59d3\u4ea4\u6d41\u9053",
+                "End": "\u6771\u8349\u5c6f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "7K+590"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-328.780-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100132900D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=72",
+            "LocationType": 1,
+            "PositionLon": 120.249725,
+            "PositionLat": 22.959723,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4ec1\u5fb7\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u5357\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "328K+780"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-316.175-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100131600D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=384",
+            "LocationType": 1,
+            "PositionLon": 120.25255,
+            "PositionLat": 23.076508,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6c38\u5eb7\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u5357\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "316K+175"
+        },
+        {
+            "CCTVID": "CCTV-N3K-S-2.345-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "3000260000360C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=94230",
+            "LocationType": 1,
+            "PositionLon": 121.7189157,
+            "PositionLat": 25.14326301,
+            "RoadID": "300026",
+            "RoadName": "\u53f02\u5df1\u7dda",
+            "RoadClass": 3,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u57fa\u9686\u6e2f\u4ea4\u6d41\u9053",
+                "End": "\u5fb7\u5b89\u8def\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "2K+345"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-0.000-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300100000C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=30000",
+            "LocationType": 1,
+            "PositionLon": 121.71578,
+            "PositionLat": 25.140242,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u746a\u6771\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u57fa\u91d1\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "0K+000"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-31.200-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A1105010F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13120",
+            "LocationType": 1,
+            "PositionLon": 121.454861,
+            "PositionLat": 25.073356,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e94\u80a1\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u74b0\u5317\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "31K+200"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-22.770-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300002110A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=72271",
+            "LocationType": 1,
+            "PositionLon": 121.593311,
+            "PositionLat": 24.995735,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6728\u67f5\u4ea4\u6d41\u9053",
+                "End": "\u6728\u67f5\u4f11\u606f\u7ad9"
+            },
+            "LocationMile": "22K+770"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-411.283-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300141100T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=343",
+            "LocationType": 1,
+            "PositionLon": 120.53078,
+            "PositionLat": 22.610981,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u7af9\u7530\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u9e9f\u6d1b\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "411K+283"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-51.766-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0105130H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15170",
+            "LocationType": 1,
+            "PositionLon": 121.27762,
+            "PositionLat": 25.02175,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "51K+766"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-18.220-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400001760B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=806",
+            "LocationType": 1,
+            "PositionLon": 120.753088,
+            "PositionLat": 24.266151,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+220"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-57.725-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0005700H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15770",
+            "LocationType": 1,
+            "PositionLon": 121.23385,
+            "PositionLat": 24.985361,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u8f49\u63a5\u4e00\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "57K+725"
+        },
+        {
+            "CCTVID": "CCTV-N5-S-18.339-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500001800F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510210301",
+            "LocationType": 1,
+            "PositionLon": 121.73277,
+            "PositionLat": 24.915907,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053",
+                "End": "\u982d\u57ce\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+339"
+        },
+        {
+            "CCTVID": "CCTV-N6-E-18.594-M-\u570b\u59d31\u865f\u96a7\u9053",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600001800M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=67",
+            "LocationType": 1,
+            "PositionLon": 120.828026,
+            "PositionLat": 24.003468,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u570b\u59d3\u4ea4\u6d41\u9053",
+                "End": "\u5317\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+594"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-19.120-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400001839B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=819",
+            "LocationType": 1,
+            "PositionLon": 120.756112,
+            "PositionLat": 24.258377,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+120"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-25.060-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A0002500A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12500",
+            "LocationType": 1,
+            "PositionLon": 121.514509,
+            "PositionLat": 25.078191,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u4e0b\u5854\u60a0\u4ea4\u6d41\u9053",
+                "End": "\u74b0\u5317\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "25K+060"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-107.340-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100010730K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=353",
+            "LocationType": 1,
+            "PositionLon": 120.92972,
+            "PositionLat": 24.71577,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u982d\u4efd\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "107K+340"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-357.896-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300035800D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1080",
+            "LocationType": 1,
+            "PositionLon": 120.331801,
+            "PositionLat": 22.972275,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u95dc\u5edf\u4ea4\u6d41\u9053",
+                "End": "\u95dc\u5edf\u670d\u52d9\u5340"
+            },
+            "LocationMile": "357K+896"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-47.350-M-\u4fef\u77b0\u6a39\u6797\u4f73\u5712\u8def",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300004730F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=34730",
+            "LocationType": 1,
+            "PositionLon": 121.38747,
+            "PositionLat": 24.951944,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "47K+350"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-235.750-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100023540P",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=417",
+            "LocationType": 1,
+            "PositionLon": 120.47027,
+            "PositionLat": 23.73558,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u897f\u87ba\u4ea4\u6d41\u9053",
+                "End": "\u864e\u5c3e\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "235K+750"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-348.515-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300134830D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1036",
+            "LocationType": 1,
+            "PositionLon": 120.321552,
+            "PositionLat": 23.050211,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u65b0\u5316\u4f11\u606f\u7ad9",
+                "End": "\u65b0\u5316\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "348K+515"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-171.142-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300117100B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=261",
+            "LocationType": 1,
+            "PositionLon": 120.60189,
+            "PositionLat": 24.29259,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6e05\u6c34\u670d\u52d9\u5340",
+                "End": "\u4e2d\u6e2f\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "171K+142"
+        },
+        {
+            "CCTVID": "CCTV-N3A-W-2.870-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000310100280A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=91280",
+            "LocationType": 1,
+            "PositionLon": 121.57438,
+            "PositionLat": 25.00714,
+            "RoadID": "000031",
+            "RoadName": "\u570b\u90533\u7532",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u842c\u82b3\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u5317\u7aef"
+            },
+            "LocationMile": "2K+870"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-245.060-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100124500P",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=498",
+            "LocationType": 1,
+            "PositionLon": 120.450717,
+            "PositionLat": 23.657367,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5927\u6797\u4ea4\u6d41\u9053",
+                "End": "\u96f2\u6797\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "245K+060"
+        },
+        {
+            "CCTVID": "CCTV-N6-E-19.152-M-\u570b\u59d31\u865f\u96a7\u9053",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600101800M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=70",
+            "LocationType": 1,
+            "PositionLon": 120.8333573,
+            "PositionLat": 24.00290728,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u570b\u59d3\u4ea4\u6d41\u9053",
+                "End": "\u5317\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+152"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-379.205-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300037940E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=265",
+            "LocationType": 1,
+            "PositionLon": 120.42145,
+            "PositionLat": 22.818,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7530\u5bee\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "379K+205"
+        },
+        {
+            "CCTVID": "CCTV-N10-E-22.180-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0001000002100E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=3084",
+            "LocationType": 1,
+            "PositionLon": 120.4451,
+            "PositionLat": 22.7967,
+            "RoadID": "000100",
+            "RoadName": "\u570b\u905310\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u5dba\u53e3\u4ea4\u6d41\u9053",
+                "End": "\u91cc\u6e2f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "22K+180"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-199.662-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300019900N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=698",
+            "LocationType": 0,
+            "PositionLon": 120.58262,
+            "PositionLat": 24.10069,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "199K+662"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-64.600-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100106430H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=16460",
+            "LocationType": 1,
+            "PositionLon": 121.19197,
+            "PositionLat": 24.938523,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5e73\u93ae\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "64K+600"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-70.300-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300007000H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=37030",
+            "LocationType": 1,
+            "PositionLon": 121.204644,
+            "PositionLat": 24.85401,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9f8d\u6f6d\u4ea4\u6d41\u9053",
+                "End": "\u95dc\u897f\u670d\u52d9\u5340"
+            },
+            "LocationMile": "70K+300"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-63.002-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300106210H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=36300",
+            "LocationType": 1,
+            "PositionLon": 121.26349,
+            "PositionLat": 24.889524,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u9f8d\u6f6d\u4ea4\u6d41\u9053",
+                "End": "\u5927\u6eaa\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "63K+002"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-18.594-M-\u570b\u59d31\u865f\u96a7\u9053",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600101800M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=98",
+            "LocationType": 1,
+            "PositionLon": 120.82955,
+            "PositionLat": 24.00323,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u5317\u5c71\u4ea4\u6d41\u9053",
+                "End": "\u570b\u59d3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+594"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-319.664-R",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "FFFFFFFFFFFFFF",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=205",
+            "LocationType": 1,
+            "PositionLon": 120.39914,
+            "PositionLat": 23.286333,
+            "RoadID": "",
+            "RoadName": "",
+            "RoadSection": {
+                "Start": "\u6771\u5c71\u670d\u52d9\u5340",
+                "End": "\u767d\u6cb3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "319K+664"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-36.820-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300103690F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=33680",
+            "LocationType": 1,
+            "PositionLon": 121.476389,
+            "PositionLat": 24.986389,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u571f\u57ce\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u548c\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "36K+820"
+        },
+        {
+            "CCTVID": "CCTV-N5-S-9.339-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500000900F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001604900301",
+            "LocationType": 1,
+            "PositionLon": 121.677216,
+            "PositionLat": 24.974964,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u77f3\u7887\u4ea4\u6d41\u9053",
+                "End": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "9K+339"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-31.340-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600103100M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=603",
+            "LocationType": 1,
+            "PositionLon": 120.93814,
+            "PositionLat": 23.98804,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u57d4\u91cc\u4ea4\u6d41\u9053",
+                "End": "\u611b\u862d\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "31K+340"
+        },
+        {
+            "CCTVID": "CCTV-N2-W-16.830-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000200101600H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=21680",
+            "LocationType": 1,
+            "PositionLon": 121.313056,
+            "PositionLat": 24.971667,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u5927\u6e73\u4ea4\u6d41\u9053",
+                "End": "\u5357\u6843\u5712\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "16K+830"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-243.701-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300124360M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=287",
+            "LocationType": 1,
+            "PositionLon": 120.70075,
+            "PositionLat": 23.798334,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5357\u96f2\u4ea4\u6d41\u9053",
+                "End": "\u7af9\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "243K+701"
+        },
+        {
+            "CCTVID": "CCTV-N1K-W-2.911-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "6206302700155E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=414",
+            "LocationType": 1,
+            "PositionLon": 120.3225648,
+            "PositionLat": 22.5688748,
+            "RoadID": "620630E",
+            "RoadName": "\u65b0\u751f\u8def",
+            "RoadClass": 6,
+            "RoadDirection": "NW",
+            "RoadSection": {
+                "Start": "\u4e09\u3001\u4e94\u7ba1\u5236\u7ad9",
+                "End": "\u904e\u6e2f\u96a7\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "2K+911"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-231.600-R-\u5357\u6295\u670d\u52d9\u5340-\u5c0f\u8eca\u5340",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "FFFFFFFFFFFFFF",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=548",
+            "LocationType": 1,
+            "PositionLon": 120.71025,
+            "PositionLat": 23.90067,
+            "RoadID": "",
+            "RoadName": "",
+            "RoadSection": {
+                "Start": "\u540d\u9593\u4ea4\u6d41\u9053",
+                "End": "\u5357\u6295\u670d\u52d9\u5340"
+            },
+            "LocationMile": "231K+600"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-124.500-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100112400K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=464",
+            "LocationType": 1,
+            "PositionLon": 120.8612,
+            "PositionLat": 24.587333,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u982d\u5c4b\u4ea4\u6d41\u9053",
+                "End": "\u982d\u4efd\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "124K+500"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-34.043-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0103400F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13401",
+            "LocationType": 1,
+            "PositionLon": 121.42767,
+            "PositionLat": 25.0678,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u4e94\u80a1\u8f49\u63a5\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "34K+043"
+        },
+        {
+            "CCTVID": "CCTV-N10-W-25.022-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0001001107000T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=3031",
+            "LocationType": 1,
+            "PositionLon": 120.49041,
+            "PositionLat": 22.800247,
+            "RoadID": "000100",
+            "RoadName": "\u570b\u905310\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u65d7\u5c71\u7aef",
+                "End": "\u91cc\u6e2f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "25K+022"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-169.270-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100016900B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=206",
+            "LocationType": 1,
+            "PositionLon": 120.68839,
+            "PositionLat": 24.237997,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u8c50\u539f\u4ea4\u6d41\u9053",
+                "End": "\u5927\u96c5\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "169K+270"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-290.9-L-S-1",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300029100Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1061",
+            "LocationType": 0,
+            "PositionLon": 120.49039,
+            "PositionLat": 23.504025,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "290K+900"
+        },
+        {
+            "CCTVID": "CCTV-N4-W-18.845-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400101828B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=879",
+            "LocationType": 1,
+            "PositionLon": 120.756441,
+            "PositionLat": 24.261333,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u6f6d\u5b50\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u52e2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+845"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-165.350-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100116520B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=466",
+            "LocationType": 1,
+            "PositionLon": 120.693167,
+            "PositionLat": 24.272133,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u53f0\u4e2d\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u540e\u91cc\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "165K+350"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-110-I-WN-1",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000101131030K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=178",
+            "LocationType": 1,
+            "PositionLon": 120.91997,
+            "PositionLat": 24.693256,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u982d\u4efd\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "110K+000"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-53.600-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300005300F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=35360",
+            "LocationType": 1,
+            "PositionLon": 121.33195,
+            "PositionLat": 24.939167,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u4e09\u9daf\u4ea4\u6d41\u9053",
+                "End": "\u9daf\u6b4c\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "53K+600"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-162.750-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100016200B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=202",
+            "LocationType": 1,
+            "PositionLon": 120.69593,
+            "PositionLat": 24.296259,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u540e\u91cc\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u4e2d\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "162K+750"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-52.640-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0005200H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15260",
+            "LocationType": 1,
+            "PositionLon": 121.27038,
+            "PositionLat": 25.016836,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u8f49\u63a5\u4e00\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "52K+640"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-166.057-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300016600B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=365",
+            "LocationType": 1,
+            "PositionLon": 120.628204,
+            "PositionLat": 24.33022,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5927\u7532\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u6e2f\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "166K+057"
+        },
+        {
+            "CCTVID": "CCTV-N1K-W-1.410-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "6250670700010E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=125",
+            "LocationType": 0,
+            "PositionLon": 120.312614,
+            "PositionLat": 22.579966,
+            "RoadID": "625067E",
+            "RoadName": "\u9ad8\u96c4\u6e2f\u806f\u5916\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 6,
+            "RoadDirection": "NW",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "1K+410"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-236.966-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300023700M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=285",
+            "LocationType": 0,
+            "PositionLon": 120.7027,
+            "PositionLat": 23.851545,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "236K+966"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-320.842-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100032050D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=386",
+            "LocationType": 1,
+            "PositionLon": 120.25001,
+            "PositionLat": 23.034988,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6c38\u5eb7\u4ea4\u6d41\u9053",
+                "End": "\u5927\u7063\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "320K+842"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-154.015-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100115400K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=198",
+            "LocationType": 1,
+            "PositionLon": 120.740204,
+            "PositionLat": 24.362509,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6cf0\u5b89\u670d\u52d9\u5340",
+                "End": "\u4e09\u7fa9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "154K+015"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-372.415-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300137200E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=262",
+            "LocationType": 1,
+            "PositionLon": 120.37017,
+            "PositionLat": 22.86167,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u7530\u5bee\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "372K+415"
+        },
+        {
+            "CCTVID": "CCTV-N1K-W-3.411-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "6250670700040E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=410",
+            "LocationType": 1,
+            "PositionLon": 120.32516,
+            "PositionLat": 22.565684,
+            "RoadID": "625067E",
+            "RoadName": "\u9ad8\u96c4\u6e2f\u806f\u5916\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 6,
+            "RoadDirection": "NW",
+            "RoadSection": {
+                "Start": "\u4e09\u3001\u4e94\u7ba1\u5236\u7ad9",
+                "End": "\u904e\u6e2f\u96a7\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "3K+411"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-61.000-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100106020H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=16100",
+            "LocationType": 1,
+            "PositionLon": 121.21139,
+            "PositionLat": 24.965845,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e2d\u58e2\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u8f49\u63a5\u4e8c\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "61K+000"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-20.800-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A0102080A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12080",
+            "LocationType": 1,
+            "PositionLon": 121.55556,
+            "PositionLat": 25.072222,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u74b0\u5317\u4ea4\u6d41\u9053",
+                "End": "\u4e0b\u5854\u60a0\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "20K+800"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-96.600-O-\u65b0\u7af9B-\u5712\u5340\u4e8c\u8def",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000101129020J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=19660",
+            "LocationType": 1,
+            "PositionLon": 121.00395,
+            "PositionLat": 24.775194,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u7af9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "96K+600"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-55-R-\u4e2d\u58e2\u670d\u52d9\u5340-\u6db5\u6d1e\u53e3",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "FFFFFFFFFFFFFF",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15502",
+            "LocationType": 1,
+            "PositionLon": 121.25269,
+            "PositionLat": 25.001757,
+            "RoadID": "",
+            "RoadName": "",
+            "RoadSection": {
+                "Start": "\u4e2d\u58e2\u670d\u52d9\u5340",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "55K+000"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-20.130-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400002017B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=835",
+            "LocationType": 1,
+            "PositionLon": 120.751436,
+            "PositionLat": 24.251263,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "20K+130"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-18.390-M-\u570b\u59d31\u865f\u96a7\u9053",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600101800M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=97",
+            "LocationType": 1,
+            "PositionLon": 120.82639,
+            "PositionLat": 24.003931,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u5317\u5c71\u4ea4\u6d41\u9053",
+                "End": "\u570b\u59d3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+390"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-21.520-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400002096B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=851",
+            "LocationType": 1,
+            "PositionLon": 120.742512,
+            "PositionLat": 24.241356,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "21K+520"
+        },
+        {
+            "CCTVID": "CCTV-N10-W-0.200-L",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "3000100037379E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=3036",
+            "LocationType": 1,
+            "PositionLon": 120.31898,
+            "PositionLat": 22.67928,
+            "RoadID": "300010",
+            "RoadName": "\u53f01\u7dda",
+            "RoadClass": 3,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9f0e\u91d1\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5de6\u71df\u7aef"
+            },
+            "LocationMile": "0K+200"
+        },
+        {
+            "CCTVID": "CCTV-N4-W-21.710-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400102089B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=902",
+            "LocationType": 1,
+            "PositionLon": 120.741629,
+            "PositionLat": 24.240117,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u6f6d\u5b50\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u52e2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "21K+710"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-154.771-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300115400K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=256",
+            "LocationType": 1,
+            "PositionLon": 120.67521,
+            "PositionLat": 24.414299,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u82d1\u88e1\u4ea4\u6d41\u9053",
+                "End": "\u901a\u9704\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "154K+771"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-349.531-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300135000D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1037",
+            "LocationType": 1,
+            "PositionLon": 120.324794,
+            "PositionLat": 23.041414,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u65b0\u5316\u4f11\u606f\u7ad9",
+                "End": "\u65b0\u5316\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "349K+531"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-8.009-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500100800F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001604800301",
+            "LocationType": 1,
+            "PositionLon": 121.66781,
+            "PositionLat": 24.982222,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053",
+                "End": "\u77f3\u7887\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "8K+009"
+        },
+        {
+            "CCTVID": "CCTV-N4-W-19.020-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400101828B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=881",
+            "LocationType": 1,
+            "PositionLon": 120.756645,
+            "PositionLat": 24.259877,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u6f6d\u5b50\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u52e2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+020"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-353.830-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100135400E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=102",
+            "LocationType": 1,
+            "PositionLon": 120.334444,
+            "PositionLat": 22.750277,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6960\u6893\u4ea4\u6d41\u9053",
+                "End": "\u5ca1\u5c71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "353K+830"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-36.120-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100003520F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13610",
+            "LocationType": 1,
+            "PositionLon": 121.410473,
+            "PositionLat": 25.058725,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u6797\u53e3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "36K+120"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-30.250-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A0103000F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13020",
+            "LocationType": 1,
+            "PositionLon": 121.46408,
+            "PositionLat": 25.075539,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e94\u80a1\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u74b0\u5317\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "30K+250"
+        },
+        {
+            "CCTVID": "CCTV-N2-E-0.000-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000200000000H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=20000",
+            "LocationType": 1,
+            "PositionLon": 121.217514,
+            "PositionLat": 25.065783,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "0K+000"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-416.551-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300141700T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1050",
+            "LocationType": 1,
+            "PositionLon": 120.52607,
+            "PositionLat": 22.55951,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5d01\u9802\u4ea4\u6d41\u9053",
+                "End": "\u7af9\u7530\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "416K+551"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-174.420-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300017400B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=434",
+            "LocationType": 1,
+            "PositionLon": 120.58951,
+            "PositionLat": 24.26594,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6e05\u6c34\u670d\u52d9\u5340",
+                "End": "\u6c99\u9e7f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "174K+420"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-174.400-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100117400B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=210",
+            "LocationType": 1,
+            "PositionLon": 120.65601,
+            "PositionLat": 24.205223,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u53f0\u4e2d\u4ea4\u6d41\u9053",
+                "End": "\u5927\u96c5\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "174K+400"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-216.010-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100121600N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=406",
+            "LocationType": 1,
+            "PositionLon": 120.49785,
+            "PositionLat": 23.910624,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5317\u6597\u4ea4\u6d41\u9053",
+                "End": "\u54e1\u6797\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "216K+010"
+        },
+        {
+            "CCTVID": "CCTV-N8-W-0.800-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000800100300D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=56",
+            "LocationType": 1,
+            "PositionLon": 120.200277,
+            "PositionLat": 23.085833,
+            "RoadID": "000080",
+            "RoadName": "\u570b\u90538\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u65b0\u5409\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u5357\u7aef"
+            },
+            "LocationMile": "0K+800"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-402.150-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300140200T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=351",
+            "LocationType": 1,
+            "PositionLon": 120.5632766,
+            "PositionLat": 22.6815129,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u9e9f\u6d1b\u4ea4\u6d41\u9053",
+                "End": "\u9577\u6cbb\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "402K+150"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-23.030-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300102300A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=82300",
+            "LocationType": 1,
+            "PositionLon": 121.5870859,
+            "PositionLat": 24.98148939,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6728\u67f5\u4f11\u606f\u7ad9",
+                "End": "\u6728\u67f5\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "23K+030"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-57.650-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300005700H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=35760",
+            "LocationType": 1,
+            "PositionLon": 121.298889,
+            "PositionLat": 24.921389,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9daf\u6b4c\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5927\u6eaa\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "57K+650"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-396.680-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300139660T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1045",
+            "LocationType": 1,
+            "PositionLon": 120.5265,
+            "PositionLat": 22.71818,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u9577\u6cbb\u4ea4\u6d41\u9053",
+                "End": "\u5c4f\u6771\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "396K+680"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-314.200-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100031460D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=439",
+            "LocationType": 1,
+            "PositionLon": 120.2505411,
+            "PositionLat": 23.09058692,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5b89\u5b9a\u4ea4\u6d41\u9053",
+                "End": "\u53f0\u5357\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "314K+200"
+        },
+        {
+            "CCTVID": "CCTV-N10-W-20.952-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0001000102010E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1010",
+            "LocationType": 1,
+            "PositionLon": 120.43396,
+            "PositionLat": 22.79403,
+            "RoadID": "000100",
+            "RoadName": "\u570b\u905310\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u5dba\u53e3\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "20K+952"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-77.175-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300107700J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=37710",
+            "LocationType": 1,
+            "PositionLon": 121.19,
+            "PositionLat": 24.797222,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u95dc\u897f\u4ea4\u6d41\u9053",
+                "End": "\u95dc\u897f\u670d\u52d9\u5340"
+            },
+            "LocationMile": "77K+175"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-85.636-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300108500J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=38560",
+            "LocationType": 1,
+            "PositionLon": 121.12122,
+            "PositionLat": 24.783464,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u7af9\u6797\u4ea4\u6d41\u9053",
+                "End": "\u95dc\u897f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "85K+636"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-19.294-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001A0001900A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=11920",
+            "LocationType": 1,
+            "PositionLon": 121.570178,
+            "PositionLat": 25.071216,
+            "RoadID": "00001A",
+            "RoadName": "\u570b\u90531\u865f\u6c50\u6b62\u4e94\u80a1\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5824\u9802\u4ea4\u6d41\u9053",
+                "End": "\u4e0b\u5854\u60a0\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+294"
+        },
+        {
+            "CCTVID": "CCTV-N2-E-7.450-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000200000700H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=20740",
+            "LocationType": 1,
+            "PositionLon": 121.26135,
+            "PositionLat": 25.027493,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u5927\u7af9\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "7K+450"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-26.900-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100002660F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=12690",
+            "LocationType": 1,
+            "PositionLon": 121.496282,
+            "PositionLat": 25.076417,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u53f0\u5317\u4ea4\u6d41\u9053",
+                "End": "\u4e09\u91cd\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "26K+900"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-59.860-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300105950H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=85980",
+            "LocationType": 1,
+            "PositionLon": 121.2840355,
+            "PositionLat": 24.9075095,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5927\u6eaa\u4ea4\u6d41\u9053",
+                "End": "\u9daf\u6b4c\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "59K+860"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-19.707-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500101900F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510211101",
+            "LocationType": 1,
+            "PositionLon": 121.74351,
+            "PositionLat": 24.908232,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u982d\u57ce\u4ea4\u6d41\u9053",
+                "End": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "19K+707"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-8.190-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300100820F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=80810",
+            "LocationType": 1,
+            "PositionLon": 121.6570755,
+            "PositionLat": 25.0906526,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6c50\u6b62\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u746a\u6771\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "8K+190"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-342.410-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000101168010E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=98",
+            "LocationType": 1,
+            "PositionLon": 120.295555,
+            "PositionLat": 22.845833,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5ca1\u5c71\u4ea4\u6d41\u9053",
+                "End": "\u9ad8\u79d1\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "342K+410"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-125.240-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300112520K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=682",
+            "LocationType": 0,
+            "PositionLon": 120.81518,
+            "PositionLat": 24.630928,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "125K+240"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-30.000-I",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000501104000G",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001612801001",
+            "LocationType": 1,
+            "PositionLon": 121.79234,
+            "PositionLat": 24.830788,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5b9c\u862d\u4ea4\u6d41\u9053",
+                "End": "\u982d\u57ce\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "30K+000"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-234.500-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100123400P",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=381",
+            "LocationType": 1,
+            "PositionLon": 120.46763,
+            "PositionLat": 23.748142,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u864e\u5c3e\u4ea4\u6d41\u9053",
+                "End": "\u897f\u87ba\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "234K+500"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-347.065-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300034700D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=250",
+            "LocationType": 1,
+            "PositionLon": 120.32502,
+            "PositionLat": 23.066715,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "347K+065"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-52.653-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0105220H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15261",
+            "LocationType": 1,
+            "PositionLon": 121.271111,
+            "PositionLat": 25.016389,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e2d\u58e2\u8f49\u63a5\u4e00\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "52K+653"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-21.270-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600102100M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1126",
+            "LocationType": 0,
+            "PositionLon": 120.85189,
+            "PositionLat": 23.994804,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "21K+270"
+        },
+        {
+            "CCTVID": "CCTV-N3A-E-2.670-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000310000290A",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=90261",
+            "LocationType": 1,
+            "PositionLon": 121.574203,
+            "PositionLat": 25.006725,
+            "RoadID": "000031",
+            "RoadName": "\u570b\u90533\u7532",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u53f0\u5317\u7aef",
+                "End": "\u842c\u82b3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "2K+670"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-210.060-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300121000B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=340",
+            "LocationType": 1,
+            "PositionLon": 120.67012,
+            "PositionLat": 24.061213,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u9727\u5cf0\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u6295\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "210K+060"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-102.603-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300010200J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=40260",
+            "LocationType": 1,
+            "PositionLon": 120.969167,
+            "PositionLat": 24.758611,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u65b0\u7af9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u8304\u82f3\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "102K+603"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-278.100-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100127800D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=38",
+            "LocationType": 1,
+            "PositionLon": 120.35311,
+            "PositionLat": 23.377996,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u65b0\u71df\u670d\u52d9\u5340",
+                "End": "\u5609\u7fa9\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "278K+100"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-56.990-I-\u5167\u58e2\u4ea4\u6d41\u9053",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000101120040H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=15691",
+            "LocationType": 1,
+            "PositionLon": 121.23944,
+            "PositionLat": 24.988096,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5167\u58e2\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u670d\u52d9\u5340"
+            },
+            "LocationMile": "56K+990"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-249.310-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100024900Q",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=580",
+            "LocationType": 1,
+            "PositionLon": 120.43851,
+            "PositionLat": 23.620947,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u96f2\u6797\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5927\u6797\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "249K+310"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-77.950-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300107730J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=37790",
+            "LocationType": 1,
+            "PositionLon": 121.181976,
+            "PositionLat": 24.796504,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u95dc\u897f\u4ea4\u6d41\u9053",
+                "End": "\u95dc\u897f\u670d\u52d9\u5340"
+            },
+            "LocationMile": "77K+950"
+        },
+        {
+            "CCTVID": "CCTV-N6-W-16.312-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000600101600M",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=93",
+            "LocationType": 1,
+            "PositionLon": 120.80628,
+            "PositionLat": 24.001,
+            "RoadID": "000060",
+            "RoadName": "\u570b\u90536\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u570b\u59d3\u4ea4\u6d41\u9053",
+                "End": "\u6771\u8349\u5c6f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "16K+312"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-44.954-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0004400H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=14490",
+            "LocationType": 1,
+            "PositionLon": 121.33016,
+            "PositionLat": 25.058525,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "44K+954"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-292.700-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300129290I",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=3065",
+            "LocationType": 1,
+            "PositionLon": 120.4959,
+            "PositionLat": 23.4889,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u4e2d\u57d4\u4ea4\u6d41\u9053",
+                "End": "\u7af9\u5d0e\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "292K+700"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-278.988-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100027800D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=378",
+            "LocationType": 1,
+            "PositionLon": 120.350845,
+            "PositionLat": 23.37342,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5609\u7fa9\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u71df\u670d\u52d9\u5340"
+            },
+            "LocationMile": "278K+988"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-262.595-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300026200P",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=1117",
+            "LocationType": 0,
+            "PositionLon": 120.60298,
+            "PositionLat": 23.714222,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "262K+595"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-309.050-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100030900D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=64",
+            "LocationType": 1,
+            "PositionLon": 120.23412,
+            "PositionLat": 23.138208,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9ebb\u8c46\u4ea4\u6d41\u9053",
+                "End": "\u5b89\u5b9a\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "309K+050"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-9.310-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500100900F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001604800501",
+            "LocationType": 1,
+            "PositionLon": 121.67729,
+            "PositionLat": 24.97555,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053",
+                "End": "\u77f3\u7887\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "9K+310"
+        },
+        {
+            "CCTVID": "CCTV-N2A-E-0-L-\u53f015\u4ea4\u6d41\u9053",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000211101020H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=92000",
+            "LocationType": 1,
+            "PositionLon": 121.20075,
+            "PositionLat": 25.073326,
+            "RoadID": "000021",
+            "RoadName": "\u570b\u90532\u7532",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u5733\u982d\u4ea4\u6d41\u9053",
+                "End": "\u5927\u5712\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "0K+000"
+        },
+        {
+            "CCTVID": "CCTV-N10-E-12.013-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0001000001100E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=304",
+            "LocationType": 1,
+            "PositionLon": 120.36459,
+            "PositionLat": 22.750235,
+            "RoadID": "000100",
+            "RoadName": "\u570b\u905310\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u4ec1\u6b66\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "12K+013"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-378.750-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300037900E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=394",
+            "LocationType": 1,
+            "PositionLon": 120.41932,
+            "PositionLat": 22.821428,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7530\u5bee\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "378K+750"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-86.090-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100008600J",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=18602",
+            "LocationType": 1,
+            "PositionLon": 121.01178,
+            "PositionLat": 24.8634,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6e56\u53e3\u4ea4\u6d41\u9053",
+                "End": "\u6e56\u53e3\u670d\u52d9\u5340"
+            },
+            "LocationMile": "86K+090"
+        },
+        {
+            "CCTVID": "CCTV-N2-W-8.310-I-\u6a5f\u5834\u7cfb\u7d71",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000201104100H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=20830",
+            "LocationType": 1,
+            "PositionLon": 121.26925,
+            "PositionLat": 25.024885,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "W",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5927\u7af9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "8K+310"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-93.080-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100009300O",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=19300",
+            "LocationType": 1,
+            "PositionLon": 121.00992,
+            "PositionLat": 24.806541,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7af9\u5317\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u7af9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "93K+080"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-367.365-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300036700D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=260",
+            "LocationType": 1,
+            "PositionLon": 120.35392,
+            "PositionLat": 22.903011,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u95dc\u5edf\u670d\u52d9\u5340",
+                "End": "\u7530\u5bee\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "367K+365"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-298.595-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300129850Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1024",
+            "LocationType": 1,
+            "PositionLon": 120.48103,
+            "PositionLat": 23.44172,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6c34\u4e0a\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u57d4\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "298K+595"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-247.600-M-\u6597\u5357\u5317\u5730\u78c5\u7ad9",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100124700P",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=407",
+            "LocationType": 1,
+            "PositionLon": 120.442024,
+            "PositionLat": 23.63561,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u5927\u6797\u4ea4\u6d41\u9053",
+                "End": "\u96f2\u6797\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "247K+600"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-297.395-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300029740Q",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=193",
+            "LocationType": 1,
+            "PositionLon": 120.48701,
+            "PositionLat": 23.45415,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7af9\u5d0e\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u57d4\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "297K+395"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-47.550-M-1",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300104700F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=34750",
+            "LocationType": 1,
+            "PositionLon": 121.385315,
+            "PositionLat": 24.951757,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "47K+550"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-21.056-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500102100F",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510211301",
+            "LocationType": 1,
+            "PositionLon": 121.75351,
+            "PositionLat": 24.900188,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u982d\u57ce\u4ea4\u6d41\u9053",
+                "End": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "21K+056"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-367.500-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100036800E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=480",
+            "LocationType": 1,
+            "PositionLon": 120.33599,
+            "PositionLat": 22.628685,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u9ad8\u96c4\u4ea4\u6d41\u9053",
+                "End": "\u745e\u9686\u8def\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "367K+500"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-138.721-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300013800K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=685",
+            "LocationType": 0,
+            "PositionLon": 120.73844,
+            "PositionLat": 24.537006,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "138K+721"
+        },
+        {
+            "CCTVID": "CCTV-N4-E-18.580-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000400001839B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=809",
+            "LocationType": 1,
+            "PositionLon": 120.755297,
+            "PositionLat": 24.263302,
+            "RoadID": "000040",
+            "RoadName": "\u570b\u90534\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u8c50\u52e2\u4ea4\u6d41\u9053",
+                "End": "\u6f6d\u5b50\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "18K+580"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-47.198-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500104700G",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001614800301",
+            "LocationType": 1,
+            "PositionLon": 121.79213,
+            "PositionLat": 24.684572,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u8607\u6fb3\u4ea4\u6d41\u9053",
+                "End": "\u7f85\u6771\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "47K+198"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-36.573-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0103640F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=13650",
+            "LocationType": 1,
+            "PositionLon": 121.40677,
+            "PositionLat": 25.05598,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "36K+573"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-379.005-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300037940E",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=264",
+            "LocationType": 1,
+            "PositionLon": 120.42057,
+            "PositionLat": 22.81953,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u7530\u5bee\u4ea4\u6d41\u9053",
+                "End": "\u71d5\u5de2\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "379K+005"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-285.000-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000100028500D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=29",
+            "LocationType": 1,
+            "PositionLon": 120.306768,
+            "PositionLat": 23.334212,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u65b0\u71df\u670d\u52d9\u5340",
+                "End": "\u65b0\u71df\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "285K+000"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-200.310-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100020000N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=227",
+            "LocationType": 1,
+            "PositionLon": 120.523705,
+            "PositionLat": 24.049103,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5f70\u5316\u4ea4\u6d41\u9053",
+                "End": "\u57d4\u9e7d\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "200K+310"
+        },
+        {
+            "CCTVID": "CCTV-N5-N-0.010-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000501101010A",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001602800101",
+            "LocationType": 1,
+            "PositionLon": 121.62135,
+            "PositionLat": 25.03598,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u77f3\u7887\u4ea4\u6d41\u9053",
+                "End": "\u5357\u6e2f\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "0K+010"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-110.560-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300011060K",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=41050",
+            "LocationType": 1,
+            "PositionLon": 120.90273,
+            "PositionLat": 24.727869,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "110K+560"
+        },
+        {
+            "CCTVID": "CCTV-N1-N-0.400-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000100100000C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=10040",
+            "LocationType": 1,
+            "PositionLon": 121.733126,
+            "PositionLat": 25.119482,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u57fa\u9686\u4ea4\u6d41\u9053",
+                "End": "\u57fa\u9686\u7aef"
+            },
+            "LocationMile": "0K+400"
+        },
+        {
+            "CCTVID": "CCTV-N1-T-167-A-N-1",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000101038030B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=204",
+            "LocationType": 0,
+            "PositionLon": 120.69483,
+            "PositionLat": 24.248514,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "167K+000"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-410.010-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300141000T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1049",
+            "LocationType": 1,
+            "PositionLon": 120.53226,
+            "PositionLat": 22.61712,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u7af9\u7530\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u9e9f\u6d1b\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "410K+010"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-48.595-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0004800H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=14850",
+            "LocationType": 1,
+            "PositionLon": 121.30055,
+            "PositionLat": 25.040005,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "48K+595"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-335.004-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300033500D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=232",
+            "LocationType": 1,
+            "PositionLon": 120.35281,
+            "PositionLat": 23.168709,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5b98\u7530\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u5584\u5316\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "335K+004"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-366.230-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300036600D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=1082",
+            "LocationType": 1,
+            "PositionLon": 120.351103,
+            "PositionLat": 22.908064,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u95dc\u5edf\u670d\u52d9\u5340",
+                "End": "\u7530\u5bee\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "366K+230"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-0.200-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000300100000C",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=30020",
+            "LocationType": 1,
+            "PositionLon": 121.713165,
+            "PositionLat": 25.13878,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u746a\u6771\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u57fa\u91d1\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "0K+200"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-149.511-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000300114900K",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=255",
+            "LocationType": 1,
+            "PositionLon": 120.678665,
+            "PositionLat": 24.459314,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u82d1\u88e1\u4ea4\u6d41\u9053",
+                "End": "\u901a\u9704\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "149K+511"
+        },
+        {
+            "CCTVID": "CCTV-N1H-S-40.965-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0004000F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=14091",
+            "LocationType": 1,
+            "PositionLon": 121.37556,
+            "PositionLat": 25.06639,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u6cf0\u5c71\u8f49\u63a5\u9053\u4ea4\u6d41\u9053",
+                "End": "\u6a5f\u5834\u7cfb\u7d71\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "40K+965"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-50.900-O-\u4e09\u9daf\u4ea4\u6d41\u9053-C",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000301114000F",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=35090",
+            "LocationType": 1,
+            "PositionLon": 121.3559,
+            "PositionLat": 24.935604,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u9daf\u6b4c\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u4e09\u9daf\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "50K+900"
+        },
+        {
+            "CCTVID": "CCTV-N5-S-25.298-M",
+            "SubAuthorityCode": "NFB-PL",
+            "LinkID": "0000500002520G",
+            "VideoStreamURL": "https://cctvp02.freeway.gov.tw/mjpeg/X01001510211701",
+            "LocationType": 1,
+            "PositionLon": 121.77857,
+            "PositionLat": 24.869696,
+            "RoadID": "000050",
+            "RoadName": "\u570b\u90535\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u576a\u6797\u4ea4\u63a7\u4ea4\u6d41\u9053",
+                "End": "\u982d\u57ce\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "25K+298"
+        },
+        {
+            "CCTVID": "CCTV-N3-N-350.350-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300135000D",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=3070",
+            "LocationType": 1,
+            "PositionLon": 120.32733,
+            "PositionLat": 23.034538,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u95dc\u5edf\u4ea4\u6d41\u9053",
+                "End": "\u65b0\u5316\u4f11\u606f\u7ad9"
+            },
+            "LocationMile": "350K+350"
+        },
+        {
+            "CCTVID": "CCTV-N3-S-430.396-M",
+            "SubAuthorityCode": "NFB-SR",
+            "LinkID": "0000300043000T",
+            "VideoStreamURL": "https://cctvs.freeway.gov.tw/live-view/mjpg/video.cgi?camera=349",
+            "LocationType": 1,
+            "PositionLon": 120.511696,
+            "PositionLat": 22.450096,
+            "RoadID": "000030",
+            "RoadName": "\u570b\u90533\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u5357\u5dde\u4ea4\u6d41\u9053",
+                "End": "\u6797\u908a\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "430K+396"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-250.306-L-NS-1-\u5927\u6797\u4ea4\u6d41\u9053",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000101053040Q",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=399",
+            "LocationType": 0,
+            "PositionLon": 120.4364649,
+            "PositionLat": 23.6121485,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "",
+                "End": ""
+            },
+            "LocationMile": "250K+306"
+        },
+        {
+            "CCTVID": "CCTV-N1H-N-65.500-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "00001B0106500H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=16550",
+            "LocationType": 1,
+            "PositionLon": 121.18682,
+            "PositionLat": 24.93313,
+            "RoadID": "00001B",
+            "RoadName": "\u570b\u90531\u865f\u4e94\u80a1\u694a\u6885\u9ad8\u67b6\u9053\u8def",
+            "RoadClass": 0,
+            "RoadDirection": "N",
+            "RoadSection": {
+                "Start": "\u6821\u524d\u8def\u4ea4\u6d41\u9053",
+                "End": "\u4e2d\u58e2\u8f49\u63a5\u4e8c\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "65K+500"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-218.900-M-\u54e1\u6797\u5317\u5730\u78c5\u7ad9",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100021900N",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=415",
+            "LocationType": 1,
+            "PositionLon": 120.49168,
+            "PositionLat": 23.884058,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u54e1\u6797\u4ea4\u6d41\u9053",
+                "End": "\u5317\u6597\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "218K+900"
+        },
+        {
+            "CCTVID": "CCTV-N2-E-2.900-M",
+            "SubAuthorityCode": "NFB-NR",
+            "LinkID": "0000200000200H",
+            "VideoStreamURL": "https://cctvn.freeway.gov.tw/abs2mjpg/bmjpg?camera=20290",
+            "LocationType": 1,
+            "PositionLon": 121.220528,
+            "PositionLat": 25.042345,
+            "RoadID": "000020",
+            "RoadName": "\u570b\u90532\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "E",
+            "RoadSection": {
+                "Start": "\u5927\u5712\u4ea4\u6d41\u9053",
+                "End": "\u5927\u7af9\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "2K+900"
+        },
+        {
+            "CCTVID": "CCTV-N1-S-166.360-M",
+            "SubAuthorityCode": "NFB-CR",
+            "LinkID": "0000100016610B",
+            "VideoStreamURL": "https://cctvc.freeway.gov.tw/abs2mjpg/bmjpg?camera=203",
+            "LocationType": 1,
+            "PositionLon": 120.69189,
+            "PositionLat": 24.263983,
+            "RoadID": "000010",
+            "RoadName": "\u570b\u90531\u865f",
+            "RoadClass": 0,
+            "RoadDirection": "S",
+            "RoadSection": {
+                "Start": "\u53f0\u4e2d\u7cfb\u7d71\u4ea4\u6d41\u9053",
+                "End": "\u8c50\u539f\u4ea4\u6d41\u9053"
+            },
+            "LocationMile": "166K+360"
+        }
+    ]
+}
