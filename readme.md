@@ -9,8 +9,8 @@
 - 安裝函式庫
 - ```
   pip install flask
-  pip install flask_cors
+  sudo pip install -U flask_cors
   pip install geopy
-  pip insall
+  pip install folium
   ```
 - 打開網頁測試
