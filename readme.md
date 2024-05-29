@@ -5,12 +5,15 @@
 
 **Bus-hot.html**
 
-- 先產生資料 data/test-\*
-- 安裝函式庫
-- ```
-  pip install flask
-  sudo pip install -U flask_cors
-  pip install geopy
-  pip install folium
-  ```
+- 先產生資料 data/test-\* -> CCTV.ipynb 前四句
+- 安裝函式庫（用管理者權限）
+
+```
+  sudo pip install flask flask_cors geopy folium
+```
+
 - 打開網頁測試
+
+```
+  python bus-flask.py
+```

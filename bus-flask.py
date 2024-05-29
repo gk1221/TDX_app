@@ -40,34 +40,80 @@ def get_data():
 @app.route('/CCTV')
 def get_CCTV():
     column = ['CCTVID', 'LinkID', 'VideoStreamURL', 'PositionLon', 'PositionLat' ,'RoadName', 'SurveillanceDescription']
-    citylist = ['YilanCounty', 'HsinchuCounty', 'ChanghuaCounty', 'NantouCounty', 'YunlinCounty', 'PingtungCounty', 'TaitungCounty', 'Keelung', 'Hsinchu', 'Chiayi', 'Taipei', 'Kaohsiung', 'NewTaipei', 'Taichung', 'Tainan', 'Taoyuan']
+    citylist = ['YilanCounty', 'HsinchuCounty', 'ChanghuaCounty', 'NantouCounty', 'YunlinCounty', 'PingtungCounty', 'TaitungCounty', 'Keelung', 'Hsinchu', 'Chiayi', 'Taipei', 'Kaohsiung', 'NewTaipei', 'Taichung', 'Tainan', 'Taoyuan', ]
     df = pd.DataFrame(columns=column)
     for city in citylist:        
         with open(f'data/test-{city}.json', 'r', encoding='utf-8') as f:
             testTV = json.load(f)['CCTVs']
-
         city_data = {}
         for TV in testTV:
-
             for col in column:
                 if col in TV:
-                    
                     city_data[col] = TV[col]
                 else:
                     pass
                     #print(city, col)
-
             df = pd.concat([df, pd.DataFrame([city_data])], ignore_index=True)
+            
+    with open(f'data/test-highway.json', 'r', encoding='utf-8') as f:
+            highTV = json.load(f)['CCTVs']
+    for TV in highTV:
+        for col in column:
+            if col in TV:
+                city_data[col] = TV[col]
+            else:
+                pass
+                #print(city, col)
+        df = pd.concat([df, pd.DataFrame([city_data])], ignore_index=True)
+            
     df.fillna('', inplace=True)
     return jsonify(df.to_dict(orient='records'))
 
 @app.route('/highwayCCTV')
 def get_highwayCCTV():
+    column = ['CCTVID', 'LinkID', 'VideoStreamURL', 'PositionLon', 'PositionLat' ,'RoadName', 'SurveillanceDescription']
     df = pd.DataFrame()
+    city_data = {}
     with open(f'data/test-highway.json', 'r', encoding='utf-8') as f:
         highTV = json.load(f)['CCTVs']
+    for TV in highTV:
+        for col in column:
+            if col in TV:
+                city_data[col] = TV[col]
+                #print(city, col)
+        df = pd.concat([df, pd.DataFrame([city_data])], ignore_index=True)
+    
     df.fillna('', inplace=True)
-    df = pd.DataFrame(highTV)
+    return jsonify(df.to_dict(orient='records'))
+
+@app.route('/attractions_activity')
+def get_attractions_activity():
+    getkey.getjson('https://tdx.transportdata.tw/api/basic/v2/Tourism/Activity?%24top=80&%24format=JSON', "Attractions_activity")
+    df = pd.DataFrame()
+    with open(f'data/Attractions_activity.json', 'r', encoding='utf-8') as f:
+        Attractions_activity = json.load(f)
+    df = pd.DataFrame(Attractions_activity)
+    df.fillna('', inplace=True)
+    return jsonify(df.to_dict(orient='records'))
+
+@app.route('/attractions')
+def get_attractions():
+    getkey.getjson('https://tdx.transportdata.tw/api/tourism/service/odata/V2/Tourism/Attraction?%24top=80', "Attractions")
+    df = pd.DataFrame()
+    with open(f'data/Attractions.json', 'r', encoding='utf-8') as f:
+        Attractions = json.load(f)['value']
+    df = pd.DataFrame(Attractions)
+    df.fillna('', inplace=True)
+    return jsonify(df.to_dict(orient='records'))
+
+@app.route('/scenicSpot')
+def get_scenic():
+    getkey.getjson('https://tdx.transportdata.tw/api/basic/v2/Tourism/ScenicSpot?%24top=100&%24format=JSON', "scenicSpot")
+    df = pd.DataFrame()
+    with open(f'data/scenicSpot.json', 'r', encoding='utf-8') as f:
+        Attractions_activity = json.load(f)
+    df = pd.DataFrame(Attractions_activity)
+    df.fillna('', inplace=True)
     return jsonify(df.to_dict(orient='records'))
 
 if __name__ == '__main__':

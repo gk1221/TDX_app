@@ -3,37 +3,35 @@
 <meta charset="utf-8" />
 <title>Bus Traffic Heatmap near Taipei 101</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<style>
-  #map {
-    width: 100%;
-    height: 100%;
-  }
-</style>
 
+<head>
 
+  <style>
+    #map {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
 
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  </link>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
-</link>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
-
-
-
-<!-- icon -->
-
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-<link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
-<!-- heatjs -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+  <!-- icon -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+  <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
+  <!-- heatjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
+  <!-- mytool -->
+  <script src="tool.js" ></script>
 
 </head>
 
@@ -42,87 +40,52 @@
 
   <script>
     // 初始化地圖
-    var map = L.map('map').setView([25.033964, 121.564472], 15);
+    var map = L.map('map').setView([23.800983, 120.772569], 7);
 
     // 添加地圖圖層
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    var baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    var cityGroup = L.layerGroup().addTo(map);
+    var CCTV_Group = L.featureGroup();
+    var attraction_Group = L.featureGroup();
+    var activity_Group = L.featureGroup();
+    var scenic_Group = L.featureGroup();
+    var highway_Group = L.featureGroup();
 
     var heatLayer;
 
-    // 獲取數據並更新熱圖
-    function updateHeatmap() {
-      fetch('http://127.0.0.1:5000/busdata')
-        .then(response => response.json())
-        .then(data => {
-          //console.log(data)
-          if (heatLayer) {
-            map.removeLayer(heatLayer);
-          }
-          heatLayer = L.heatLayer(data, { radius: 25 }).addTo(map);
-        })
-        .catch(error => console.error('Error fetching data:', error));
 
 
-    }
-
-    function getCCTV() {
-      fetch('http://127.0.0.1:5000/CCTV')
-        .then(response => response.json())
-        .then(data => {
-          parseCCTV(data)
-        })
-        .catch(error => console.error('Error fetching data:', error));
-
-
-    }
-
-    function parseCCTV(data) {
-
-      var redMarkerIcon = L.AwesomeMarkers.icon({
-        icon: 'facetime-video',
-        markerColor: 'lightgray'
-      });
-      //console.log(redMarkerIcon)
-      data.forEach(element => {
-        var popContent = `
-                        <h2>${element.RoadName != "" ? element.RoadName : element.SurveillanceDescription}</h2>
-                        <iframe src="${element.VideoStreamURL}" width="600" height="300" frameborder="0" allowfullscreen></iframe>
-                    `;
-
-        var marker = L.marker([element.PositionLat, element.PositionLon], {
-          icon: redMarkerIcon
-        });
-
-        marker.bindPopup(popContent, {
-          maxWidth: 2500,
-          lazy: true
-        });
-
-        marker.addTo(map)
-        cityGroup.addLayer(marker)
-
-      });
-
-      var baseMaps = {
-        "Taiwan Map": map
-      };
-
-      var overlayMaps = {
-        "CCTVs": cityGroup,
-      };
-
-      L.control.layers(baseMaps, overlayMaps).addTo(map);
-
-
-    }
+    //fit map function
+    function fitMapToLayer(layer) {
+          layer = layer.target
+          
+            if (layer.getBounds) {
+                map.fitBounds(layer.getBounds());
+            } else if (layer.getLatLng) {
+              console.log('here');
+                map.setView([23.800983, 120.772569], 7.3);// 你可以調整縮放級別
+            }
+        }
 
     // 初始加載
     updateHeatmap();
-    getCCTV()
+    getCCTV('CCTV', CCTV_Group)
+    getCCTV('highwayCCTV', highway_Group)
+    getscenic(scenic_Group)
+    getattraction(attraction_Group)
+    getactivity(activity_Group)
+
+    var overlays = {
+            "縣市監視器": CCTV_Group,
+            "高速公路監視器": highway_Group,
+            "景點": attraction_Group,
+            "風景": scenic_Group,
+            "景點活動":activity_Group
+
+        };
+        var layersControl = L.control.layers(null, overlays).addTo(map);
 
     // 每分鐘更新一次
     setInterval(updateHeatmap, 10000);
