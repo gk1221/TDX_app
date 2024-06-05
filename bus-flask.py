@@ -88,7 +88,7 @@ def get_highwayCCTV():
 
 @app.route('/attractions_activity')
 def get_attractions_activity():
-    getkey.getjson('https://tdx.transportdata.tw/api/basic/v2/Tourism/Activity?%24top=80&%24format=JSON', "Attractions_activity")
+    getkey.getjson('https://tdx.transportdata.tw/api/basic/v2/Tourism/Activity?%24orderby=starttime%20desc&%24top=80&%24format=JSON', "Attractions_activity")
     df = pd.DataFrame()
     with open(f'data/Attractions_activity.json', 'r', encoding='utf-8') as f:
         Attractions_activity = json.load(f)

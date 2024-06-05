@@ -36,9 +36,6 @@ function parseCCTV(data, group) {
     marker.addTo(group);
   });
 
-  var baseMaps = {
-    "Taiwan Map": map,
-  };
   //var layer2 = L.circle([51.508, -0.11], { color: 'red', radius: 500 }).bindPopup('I am layer 2.');
   //layer2.on('add', fitMapToLayer)
 }
@@ -127,7 +124,11 @@ function parseactivity(data, group) {
     // } else console.log("ddd");
     var popContent = `    <div style="width:200px;height:100px;background='green'">
               <h5> ${element.ActivityName}</h5>
-              <p>  ${element.Description.substring(0, 100) + " ......"}  </p>
+              <p>  ${
+                element.Description == "無"
+                  ? ""
+                  : element.Description.substring(0, 100) + " ......"
+              }  </p>
               </div>`;
     var marker = L.marker(
       [element.Position.PositionLat, element.Position.PositionLon],
@@ -164,4 +165,41 @@ function updateHeatmap() {
       heatLayer = L.heatLayer(data, { radius: 25 }).addTo(map);
     })
     .catch((error) => console.error("Error fetching data:", error));
+}
+
+function clickAPI(event) {
+  alert(event.latlng);
+  const clickLatLng = event.latlng;
+  const markersWithin10Km = [];
+
+  highway_Group.eachLayer((layer) => {
+    const markerLatLng = layer.getLatLng();
+    const distance = map.distance(clickLatLng, markerLatLng);
+
+    if (distance <= 10000) {
+      // 10公里範圍內
+      markersWithin10Km.push(layer);
+    }
+
+    // 清除以前的標示
+    highway_Group.eachLayer((layer) => {
+      layer.setIcon(new L.Icon.Default());
+    });
+
+    // 標示10公里範圍內的點
+    markersWithin10Km.forEach((marker) => {
+      marker.setIcon(
+        new L.Icon({
+          iconUrl: "https://leafletjs.com/examples/custom-icons/leaf-red.png",
+          shadowUrl:
+            "https://leafletjs.com/examples/custom-icons/leaf-shadow.png",
+          iconSize: [38, 95], // size of the icon
+          shadowSize: [50, 64], // size of the shadow
+          iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+          shadowAnchor: [4, 62], // the same for the shadow
+          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
+        })
+      );
+    });
+  });
 }

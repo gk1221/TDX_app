@@ -42,18 +42,25 @@
     // 初始化地圖
     var map = L.map('map').setView([23.800983, 120.772569], 7);
 
+
+
     // 添加地圖圖層
     var baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
+
+
+
 
     var CCTV_Group = L.featureGroup();
     var attraction_Group = L.featureGroup();
     var activity_Group = L.featureGroup();
     var scenic_Group = L.featureGroup();
     var highway_Group = L.featureGroup();
+    var show_Group = L.featureGroup();
 
     var heatLayer;
+
 
 
 
@@ -77,6 +84,8 @@
     getattraction(attraction_Group)
     getactivity(activity_Group)
 
+
+
     var overlays = {
             "縣市監視器": CCTV_Group,
             "高速公路監視器": highway_Group,
@@ -85,7 +94,13 @@
             "景點活動":activity_Group
 
         };
-        var layersControl = L.control.layers(null, overlays).addTo(map);
+    var layersControl = L.control.layers(null, overlays).addTo(map);
+
+    //針對地圖增加點擊行為
+    map.on('click' ,(e)=> clickAPI(e));
+  
+
+    
 
     // 每分鐘更新一次
     setInterval(updateHeatmap, 10000);
