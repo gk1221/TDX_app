@@ -5,7 +5,66 @@ import folium
 from folium.plugins import HeatMap
 import getkey
 
-# 讀取數據
+# 讀取數據，不是所有縣市都有，以下是有的縣市及縣市資料數目，
+# 台北（'Taipei'）：802 ，台南（'Tainan'）：7，高雄（'Kaohsiung'）：0（皆為-99），
+# 桃園（'Taoyuan'）：246，雲林市（'YunlinCounty'）：6，屏東市（'PingtungCounty'）：27，數目會是動態的
+
+def getCountryData(country):
+    #抓縣市即時發布路況
+    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/City/"+country+"?%24format=JSON", "CountryCongestion")
+    with open('data/CountryCongestion.json', 'r', encoding='utf-8') as f:
+        CountryCongestion = json.load(f)
+    #抓縣市發布路段
+    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/City/"+country+"?%24format=JSON", "CountrySection")
+    with open('data/CountrySection.json', 'r', encoding='utf-8') as f:
+        CountrySection = json.load(f)
+    #抓縣市車輛偵測器
+    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/VD/City/"+country+"?%24format=JSON", "CountryVD")
+    with open('data/CountryVD.json', 'r', encoding='utf-8') as f:
+        CountryVD = json.load(f)
+    
+    #縣市即時發布路況整理
+    pd_CountryCongestion = pd.DataFrame(CountryCongestion)
+    pd_CountryCongestion = pd.DataFrame(pd_CountryCongestion['LiveTraffics'])
+    pd_CountryCongestion['SectionID'] = pd_CountryCongestion['LiveTraffics'].apply(lambda x: x['SectionID'])
+    pd_CountryCongestion['CongestionLevel'] = pd_CountryCongestion['LiveTraffics'].apply(lambda x: x['CongestionLevel'])
+    pd_CountryCongestion = pd_CountryCongestion.drop(columns='LiveTraffics')
+  
+
+    #縣市發布路段整理
+    pd_CountrySection = pd.DataFrame(CountrySection)
+    pd_CountrySection = pd.DataFrame(pd_CountrySection['Sections'])
+    pd_CountrySection['SectionID'] = pd_CountrySection['Sections'].apply(lambda x : x['SectionID'])
+    pd_CountrySection['LinkIDs'] = pd_CountrySection['Sections'].apply(lambda x : x['LinkIDs'])
+    pd_CountrySection = pd_CountrySection.drop(columns='Sections')
+    pd_CountrySection = pd_CountrySection.explode('LinkIDs')
+    pd_CountrySection['LinkID'] = pd_CountrySection['LinkIDs'].apply(lambda x: x['LinkID'])
+    pd_CountrySection = pd_CountrySection.drop(columns = 'LinkIDs')
+
+    #縣市車輛偵測器整理
+    pd_CountryVD = pd.DataFrame(CountryVD)
+    pd_CountryVD = pd.DataFrame(pd_CountryVD, columns=['VDs'])
+    pd_CountryVD['VDID'] = pd_CountryVD['VDs'].apply(lambda x : x['VDID'])
+    pd_CountryVD['DetectionLinks'] = pd_CountryVD['VDs'].apply(lambda x : x['DetectionLinks'])
+    pd_CountryVD['PositionLat'] = pd_CountryVD['VDs'].apply(lambda x : x['PositionLat'])
+    pd_CountryVD['PositionLon'] = pd_CountryVD['VDs'].apply(lambda x : x['PositionLon'])
+    pd_CountryVD = pd_CountryVD.drop(columns='VDs')
+    pd_CountryVD = pd_CountryVD.explode('DetectionLinks')
+    pd_CountryVD['LinkID'] = pd_CountryVD['DetectionLinks'] .apply(lambda x: x['LinkID'])
+    pd_CountryVD = pd_CountryVD.drop(columns='DetectionLinks')
+    
+    #合併資料
+    CountrySectionCongestion = pd.merge(pd_CountryCongestion,pd_CountrySection, how='inner', on='SectionID')
+    CountryData = pd.merge(pd_CountryVD,CountrySectionCongestion, how='inner', on='LinkID')
+    CountryData = CountryData.drop(columns='VDID')
+    CountryData = CountryData.drop(columns='LinkID')
+    CountryData = CountryData.drop(columns='SectionID')
+    #因為congestion level等於99的話，代表未開放通行，所以我刪掉這部分數據
+    CountryData['CongestionLevel'] = CountryData['CongestionLevel'].astype(int)
+    CountryData = CountryData[CountryData['CongestionLevel'] != -99]
+
+    return CountryData
+
 def getHighwayData():
     # 抓省道即時發布路況
     getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/Highway?%24format=JSON", "Congestion")
@@ -59,11 +118,11 @@ def getHighwayData():
     return HighwayData
 
 def find_nearest_points(lat, lon, data):
-    #除去重複數據，我也不曉得為什麼有重複的
+    #除去重複數據，我也不曉得為什麼有重複的，後來發現是抓的資料會有重複的，現在不曉得是什麼原因
     data = data.drop_duplicates(subset=['PositionLat', 'PositionLon'])
     # 計算距離
     data['distance'] = data.apply(lambda row: geodesic((lat, lon), (row['PositionLat'], row['PositionLon'])).meters, axis=1)
-    # 按距離排序並取前 top_n 個點
+    # 按距離排序並取前 20 點
     nearest_points = data.nsmallest(20, 'distance') #原則上前面的數字是代表要抓幾個點的意思，我先用20，用10的時候我覺得有點少，再看學長你怎麼想
     return nearest_points
 
@@ -93,5 +152,7 @@ lat = 23.5 # 替換為你的緯度
 lon = 120.5  # 替換為你的經度
 
 # print(getHighwayData())
-print(find_nearest_points(lat,lon,getHighwayData()))
-create_heatmap(lat, lon, getHighwayData())
+# print(find_nearest_points(lat,lon,getHighwayData()))
+# create_heatmap(lat, lon, getHighwayData())
+country = "Taipei"
+print(getCountryData(country))
