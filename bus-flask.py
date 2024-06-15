@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import requests
 from geopy.distance import geodesic
@@ -98,7 +98,7 @@ def get_attractions_activity():
 
 @app.route('/attractions')
 def get_attractions():
-    getkey.getjson('https://tdx.transportdata.tw/api/tourism/service/odata/V2/Tourism/Attraction?%24top=80', "Attractions")
+    getkey.getjson('https://tdx.transportdata.tw/api/tourism/service/odata/V2/Tourism/Attraction?%24top=200', "Attractions")
     df = pd.DataFrame()
     with open(f'data/Attractions.json', 'r', encoding='utf-8') as f:
         Attractions = json.load(f)['value']
@@ -115,6 +115,15 @@ def get_scenic():
     df = pd.DataFrame(Attractions_activity)
     df.fillna('', inplace=True)
     return jsonify(df.to_dict(orient='records'))
+
+@app.route('/asklocation' , methods=['GET'])
+def send_location():
+    lat = request.args.get('lat')
+    lon = request.args.get('lon')
+    print(lat, lon)
+    
+    get_attractions()
+    return jsonify({"return ":200})
 
 if __name__ == '__main__':
     app.run(debug=True)

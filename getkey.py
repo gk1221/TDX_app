@@ -43,15 +43,21 @@ class data():
 def getjson(url, filename):
     auth_url="https://tdx.transportdata.tw/auth/realms/TDXConnect/protocol/openid-connect/token"
   
-    a = Auth(app_id, app_key)
-    auth_response = requests.post(auth_url, a.get_auth_header())
-    d = data(app_id, app_key, auth_response)
-    national_scenic_response = requests.get(url, headers=d.get_data_header())
+    try:
+        a = Auth(app_id, app_key)
+        auth_response = requests.post(auth_url, a.get_auth_header())
+        d = data(app_id, app_key, auth_response)
+        national_scenic_response = requests.get(url, headers=d.get_data_header())
 
-    #將獲得到的資料以json方式載入
-    json_national_scenic = national_scenic_response.text
-    json_national_scenic = json.loads(json_national_scenic)
+            #將獲得到的資料以json方式載入
+        json_national_scenic = national_scenic_response.text
+        json_national_scenic = json.loads(json_national_scenic)
+        
 
-    with open(f'./data/{filename}.json', 'w') as json_file:
-        json.dump(json_national_scenic, json_file)
+        with open(f'./data/{filename}.json', 'w') as json_file:
+            json.dump(json_national_scenic, json_file)
+    except Exception as e:
+        print(f"Error in {filename} : " +e)
+    
+    
     

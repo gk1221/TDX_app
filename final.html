@@ -31,7 +31,7 @@
   <!-- heatjs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
   <!-- mytool -->
-  <script src="tool.js" ></script>
+  <script src="final_tool.js" ></script>
 
 </head>
 
@@ -50,7 +50,7 @@
     }).addTo(map);
 
 
-
+    var currentMarker = null;
 
     var CCTV_Group = L.featureGroup();
     var attraction_Group = L.featureGroup();
@@ -59,31 +59,12 @@
     var highway_Group = L.featureGroup();
     var show_Group = L.featureGroup();
 
-    var heatLayer;
+    var heatLayer=L.featureGroup();
 
 
 
-
-    //fit map function
-    function fitMapToLayer(layer) {
-          layer = layer.target
-          
-            if (layer.getBounds) {
-                map.fitBounds(layer.getBounds());
-            } else if (layer.getLatLng) {
-              console.log('here');
-                map.setView([23.800983, 120.772569], 7.3);// 你可以調整縮放級別
-            }
-        }
-
-    // 初始加載
-    updateHeatmap();
-    getCCTV('CCTV', CCTV_Group)
-    getCCTV('highwayCCTV', highway_Group)
-    getscenic(scenic_Group)
-    getattraction(attraction_Group)
-    getactivity(activity_Group)
-
+    
+    
 
 
     var overlays = {
@@ -91,10 +72,15 @@
             "高速公路監視器": highway_Group,
             "景點": attraction_Group,
             "風景": scenic_Group,
-            "景點活動":activity_Group
-
+            "景點活動":activity_Group,
+            "交通狀況":heatLayer
         };
-    var layersControl = L.control.layers(null, overlays).addTo(map);
+
+        Object.values(overlays).forEach(layer=> {
+    map.addLayer(layer)
+    // 你可以在这里对 layerGroup 进行更多处理
+})
+    var layersControl = L.control.layers(null, overlays,{collapsed:false}).addTo(map);
 
     //針對地圖增加點擊行為
     map.on('click' ,(e)=> clickSearch(e));
@@ -102,8 +88,7 @@
 
     
 
-    // 每分鐘更新一次
-    setInterval(updateHeatmap, 10000);
+ 
   </script>
 </body>
 

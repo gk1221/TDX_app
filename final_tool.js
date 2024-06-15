@@ -1,33 +1,29 @@
 //pase CCTV
 const flask_ip = "http://127.0.0.1:5000";
 
-const getCCTV = (url, group) => {
-  fetch(`${flask_ip}/${url}`)
-    .then((response) => response.json())
-    .then((data) => {
-      parseCCTV(data, group);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-};
-
 const parseCCTV = (data, group) => {
-  var redMarkerIcon = L.AwesomeMarkers.icon({
+  group.clearLayers();
+
+  var MarkerIcon = L.AwesomeMarkers.icon({
     icon: "facetime-video",
-    markerColor: "lightgray",
+    markerColor: group == highway_Group ? "lightgray" : "gray",
   });
-  //console.log(redMarkerIcon)
+
   data.forEach((element) => {
-    var popContent = `<h2>${
+    var popContent = `
+    <div style="width:400px;height:300px;">
+    <h2>${
       element.RoadName != ""
         ? element.RoadName
         : element.SurveillanceDescription
     }</h2>
                       <iframe src="${
                         element.VideoStreamURL
-                      }" style="max-width: 100%; max-height: 100%;" frameborder="0" allowfullscreen></iframe>`;
+                      }" style="min-width: 100%; min-height: 100%;" frameborder="0" allowfullscreen></iframe>
+                      </div>`;
 
     var marker = L.marker([element.PositionLat, element.PositionLon], {
-      icon: redMarkerIcon,
+      icon: MarkerIcon,
     });
 
     marker.bindPopup(popContent, {
@@ -37,21 +33,10 @@ const parseCCTV = (data, group) => {
 
     marker.addTo(group);
   });
-
-  //var layer2 = L.circle([51.508, -0.11], { color: 'red', radius: 500 }).bindPopup('I am layer 2.');
-  //layer2.on('add', fitMapToLayer)
 };
 
-//風景位置get
-const getscenic = (group) => {
-  fetch(`${flask_ip}/scenicSpot`)
-    .then((response) => response.json())
-    .then((data) => {
-      parsescenic(data, group);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-};
 const parsescenic = (data, group) => {
+  group.clearLayers();
   var redMarkerIcon = L.AwesomeMarkers.icon({
     icon: "info-sign",
     markerColor: "blue",
@@ -61,12 +46,9 @@ const parsescenic = (data, group) => {
           <h3> ${element.ScenicSpotName}</h3>
           <p>  ${element.DescriptionDetail.substring(0, 100) + " ......"}  </p>
           </div>`;
-    var marker = L.marker(
-      [element.Position.PositionLat, element.Position.PositionLon],
-      {
-        icon: redMarkerIcon,
-      }
-    );
+    var marker = L.marker([element.PositionLat, element.PositionLon], {
+      icon: redMarkerIcon,
+    });
     marker.bindPopup(popContent, {
       maxWidth: 1800,
       lazy: true,
@@ -74,24 +56,20 @@ const parsescenic = (data, group) => {
     marker.addTo(group);
   });
 };
-//景點位置get
-const getattraction = (group) => {
-  fetch(`${flask_ip}/attractions`)
-    .then((response) => response.json())
-    .then((data) => {
-      parseattractions(data, group);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-};
+
 const parseattractions = (data, group) => {
+  group.clearLayers();
   var redMarkerIcon = L.AwesomeMarkers.icon({
     icon: "info-sign",
     markerColor: "orange",
   });
   data.forEach((element) => {
-    var popContent = `    <div style="width:200px;height:100px;background='green'">
+    var popContent = `    <div style="width:200px;height:300px;background='green'">
             <h3> ${element.AttractionName}</h3>
             <p>  ${element.Description.substring(0, 100) + " ......"}  </p>
+            <img src='${
+              element.Images[0].URL
+            }'  style="max-width: 100%; max-height: 100%;"/>
             </div>`;
     var marker = L.marker([element.PositionLat, element.PositionLon], {
       icon: redMarkerIcon,
@@ -156,17 +134,11 @@ const isDateInThePast = (dateString) => {
 };
 
 // 獲取數據並更新熱圖
-const updateHeatmap = () => {
-  fetch(`${flask_ip}/busdata`)
-    .then((response) => response.json())
-    .then((data) => {
-      //console.log(data)
-      if (heatLayer) {
-        map.removeLayer(heatLayer);
-      }
-      heatLayer = L.heatLayer(data, { radius: 25 }).addTo(map);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
+const updateHeatmap = (data) => {
+  if (heatLayer) {
+    map.removeLayer(heatLayer);
+  }
+  heatLayer = L.heatLayer(data, { radius: 60 }).addTo(map);
 };
 
 const clickAPI = (event) => {
@@ -211,12 +183,58 @@ const clickSearch = (event) => {
   const lng = event.latlng.lng.toFixed(5);
   alert(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
 
+  var Herecon = L.icon({
+    iconUrl: "./hereicon.png",
+    iconSize: [38, 38], // 图标大小
+    iconAnchor: [19, 19], // 图标锚点（图标的哪一点与坐标对应）
+    popupAnchor: [-3, -76], // 弹出窗口的锚点
+  });
+  currentMarker != null ? map.removeLayer(currentMarker) : "";
+  currentMarker = L.marker([lat, lng], { icon: Herecon }).addTo(map);
+
+  //測試
   fetch(`${flask_ip}/asklocation?lat=${lat}&lng=${lng}`)
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
     })
     .catch((error) => console.error("Error fetching data:", error));
+  //fetch highway CCTV
+  fetch(`${flask_ip}/highwayCCTV?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      parseCCTV(data, highway_Group);
+    })
+    .catch((error) => console.error("Error fetching highwayCCTV data:", error));
+  //fetch CCTV
+  fetch(`${flask_ip}/CCTV?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      parseCCTV(data, CCTV_Group);
+    })
+    .catch((error) => console.error("Error fetching highwayCCTV data:", error));
+  //fetch scenicSpot
+  fetch(`${flask_ip}/scenicSpot?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      parsescenic(data, scenic_Group);
+    })
+    .catch((error) => console.error("Error fetching scenicSpot data:", error));
+  //fetch attractions
+  fetch(`${flask_ip}/attractions?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      parseattractions(data, attraction_Group);
+    })
+    .catch((error) => console.error("Error fetching attractions data:", error));
+
+  //fetch heatdata
+  fetch(`${flask_ip}/heatdata?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      updateHeatmap(data, heatLayer);
+    })
+    .catch((error) => console.error("Error fetching heatdata data:", error));
 };
 
 //fit map function
