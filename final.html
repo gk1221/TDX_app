@@ -6,12 +6,7 @@
 
 <head>
 
-  <style>
-    #map {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
+  
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
@@ -32,11 +27,22 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
   <!-- mytool -->
   <script src="final_tool.js" ></script>
+  <link rel="stylesheet" href="final.css">
 
+  <style>
+
+  </style>
 </head>
 
 <body>
-  <div id="map"></div>
+  <div class="button-container">
+    <button class="btn btn-primary mybtn" onclick="updateDate('VD', '交通')">更新交通資料</button>
+    <button class="btn btn-success mybtn" onclick="updateDate('spot', '景點')">更新景點資料</button>
+    <button class="btn btn-warning mybtn" onclick="updateDate('CCTV', '監視器')">更新監視器資料</button>
+</div>
+  <div id="map">
+    
+  </div>
 
   <script>
     // 初始化地圖
@@ -59,7 +65,7 @@
     var highway_Group = L.featureGroup();
     var show_Group = L.featureGroup();
 
-    var heatLayer=L.featureGroup();
+    var heatLayer = L.featureGroup();
 
 
 
@@ -73,19 +79,20 @@
             "景點": attraction_Group,
             "風景": scenic_Group,
             "景點活動":activity_Group,
-            "交通狀況":heatLayer
+
         };
 
         Object.values(overlays).forEach(layer=> {
-    map.addLayer(layer)
-    // 你可以在这里对 layerGroup 进行更多处理
-})
+            map.addLayer(layer)
+            // 你可以在这里对 layerGroup 进行更多处理
+        })
     var layersControl = L.control.layers(null, overlays,{collapsed:false}).addTo(map);
 
     //針對地圖增加點擊行為
     map.on('click' ,(e)=> clickSearch(e));
   
 
+    
     
 
  

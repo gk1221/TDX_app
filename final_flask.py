@@ -26,24 +26,8 @@ def calculate_distance(row,lat, lng):
         input_location = (lat, lng)
         return distance(camera_location, input_location).kilometers
 
-
-@app.route('/update')
-def get_update():
-    get_url = [
-          ('https://tdx.transportdata.tw/api/basic/v2/Tourism/Activity?%24orderby=starttime%20desc&%24top=80&%24format=JSON', "Attractions_activity"),
-    ('https://tdx.transportdata.tw/api/basic/v2/Tourism/ScenicSpot?%24top=100&%24format=JSON', "scenicSpot"),
-    ('https://tdx.transportdata.tw/api/tourism/service/odata/V2/Tourism/Attraction?%24top=200', "Attractions"),
-    ('https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/CCTV/Freeway?%24top=100&%24format=JSON', 'highway'),
-    #熱圖-高速公路
-    ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/VD/Highway?%24format=JSON", "VD"),
-    ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/Highway?%24format=JSON", "Section"),
-    ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/Highway?%24format=JSON", "Congestion")
-     ]
-    #更新縣市的CCTV
-    for city in citylist:
-        get_url.append((f'https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/CCTV/City/{city}?%24top=100&%24format=JSON', f'CCTV-{city}'))
-    
-    print("--------------CCTV Data start Update------------------------")
+def get_url_data(group ,get_url):
+    print(f"--------------{group} Data start Update------------------------")
     for url, filename in get_url:
         try:
             getkey.getjson(url, filename)
@@ -53,29 +37,71 @@ def get_update():
             print(e)
         finally:
             time.sleep(0.5)
-    print("--------------CCTV Data Updated------------------------")
+    print(f"--------------{group} Data Updated------------------------\n")
+        
+        
+@app.route('/update')
+def get_update():
+    VD = request.args.get('VD')
+    spot = request.args.get('spot')
+    CCTV = request.args.get('CCTV')
+    
+    
+    if(spot == '1'):
+        spot_get_url = [
+            ('https://tdx.transportdata.tw/api/basic/v2/Tourism/Activity?%24orderby=starttime%20desc&%24top=80&%24format=JSON', "Attractions_activity"),
+                ('https://tdx.transportdata.tw/api/basic/v2/Tourism/ScenicSpot?%24top=100&%24format=JSON', "scenicSpot"),
+                ('https://tdx.transportdata.tw/api/tourism/service/odata/V2/Tourism/Attraction?%24top=200', "Attractions"),
+        ]
+        get_url_data('spot', spot_get_url)
+    
+    #更新縣市的CCTV
+    if(CCTV == '1'):
+        CCTV_get_url = [
+        ('https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/CCTV/Freeway?%24top=100&%24format=JSON', 'highway'),
+        ]
+        for city in citylist:
+            CCTV_get_url.append((f'https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/CCTV/City/{city}?%24top=100&%24format=JSON', f'CCTV-{city}'))
+        
+        
+        get_url_data('CCTV', CCTV_get_url) 
     
     #熱圖-將所有縣市VD資料全部整理在一起
-    with open('data/CountryData.json', 'w') as file:
-        file.write('')  # 清空文件内容
-    countrydata = []
-    for city in citylist:
-        try:
-            countrydata.append(func.getCountryData(city)) 
-            print(f"---------{city}-VD has been add to CountryData--------")
+    
+    if(VD == '1'):
+    
+        heat_get_url=[
+        ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/VD/Highway?%24format=JSON", "VD"),
+        ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/Highway?%24format=JSON", "Section"),
+        ("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/Highway?%24format=JSON", "Congestion")]
+        for url, filename in heat_get_url:
+            try:
+                getkey.getjson(url, filename)
+                print(f"{filename} has been updated")
+            except Exception as e:
+                print(f"---------{filename} Update failed--------")
+                print(e)
+            finally:
+                time.sleep(0.5)
+    
+        #VD in country        
+        countrydata = []
+        for city in citylist:
+            try:
+                countrydata.append(func.getCountryData(city)) 
+                print(f"---------{city}-VD has been add to CountryData--------")
+            except Exception as e:
+                print(f"---------{city}-VD Update failed--------")
+                print(e)
+            finally:
+                time.sleep(0.5)
+    
+        with open('data/CountryData.json', 'w') as file:
+            file.write('')  # 清空文件内容
+            file.write(json.dumps(countrydata, ensure_ascii=False))
             
-        except Exception as e:
-            
-            print(f"---------{city}-VD Update failed--------")
-            print(e)
-        finally:
-            time.sleep(0.5)
- 
-    with open('data/CountryData.json', 'w') as file:
-        file.write(json.dumps(countrydata, ensure_ascii=False))
-        
-            
-    print("--------------VD Data Updated------------------------")
+                
+        print("--------------VD Data Updated------------------------")
     
     return jsonify({'status':'success'})
 
@@ -157,7 +183,7 @@ def get_attractions_activity():
     df.drop(columns=['Position'], inplace=True)
     
     df['DistanceToInputPoint_km'] = df.apply(calculate_distance, axis=1, args=(lat,lng))
-    df = df.sort_values(by='DistanceToInputPoint_km')
+    df = df.sort_values(by='DistanceToInputPoint_km').head(10)
     
     df.fillna('', inplace=True)
     return jsonify(df.to_dict(orient='records'))
@@ -218,9 +244,52 @@ def get_heatdata():
     lat = request.args.get('lat')
     lng = request.args.get('lng')
     data = func.create_heatmap(lat, lng)
-    
-    
     return jsonify(data)
+
+@app.route('/countryheatdata' , methods=['GET'])
+def get_country_heatdata():
+    lat = request.args.get('lat')
+    lng = request.args.get('lng')
+    data = func.create_heatmap(lat, lng)
+    
+    with open(f'data/Countrydata.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    
+    df_data = []
+
+    # 遍历每个条目
+    for entry in data:
+        country = entry['country']
+        position_lat = entry['data']['PositionLat']
+        position_lon = entry['data']['PositionLon']
+        congestion_level = entry['data']['CongestionLevel']
+        
+        # 确定最大长度以便对齐数据
+        max_length = max(len(position_lat), len(position_lon), len(congestion_level))
+        
+        # 构建数据列表
+        for i in range(max_length):
+            lat = position_lat.get(str(i), None)
+            lon = position_lon.get(str(i), None)
+            congestion = congestion_level.get(str(i), None)
+            df_data.append({
+                'country': country,
+                'PositionLat': lat,
+                'PositionLon': lon,
+                'CongestionLevel': congestion
+            })
+
+    # 创建 DataFrame
+    df = pd.DataFrame(df_data)
+    
+    columns_to_check = ['PositionLat', 'PositionLon', 'CongestionLevel']
+    df = df.dropna(subset=columns_to_check)
+    df['DistanceToInputPoint_km'] = df.apply(calculate_distance, axis=1, args=(lat,lon))
+
+
+    
+    
+    return jsonify(df.head(10).to_dict(orient='records'))
 
 if __name__ == '__main__':
 

@@ -8,18 +8,21 @@ import getkey
 # 讀取數據，不是所有縣市都有，以下是有的縣市及縣市資料數目，
 # 台北（'Taipei'）：802 ，台南（'Tainan'）：7，高雄（'Kaohsiung'）：0（皆為-99），
 # 桃園（'Taoyuan'）：246，雲林市（'YunlinCounty'）：6，屏東市（'PingtungCounty'）：27，數目會是動態的
-
+def check_update():
+    
+    raise Exception("Update failed")
 def getCountryData(country):
     #抓縣市即時發布路況
-    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/City/"+country+"?%24format=JSON", f"CountryCongestion-{country}")
+    #getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Live/City/"+country+"?%24format=JSON", f"CountryCongestion-{country}")
     with open(f'data/CountryCongestion-{country}.json', 'r', encoding='utf-8') as f:
         CountryCongestion = json.load(f)
+        print()
     #抓縣市發布路段
-    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/City/"+country+"?%24format=JSON", f"CountrySection-{country}")
+    #getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/Section/City/"+country+"?%24format=JSON", f"CountrySection-{country}")
     with open(f'data/CountrySection-{country}.json', 'r', encoding='utf-8') as f:
         CountrySection = json.load(f)
     #抓縣市車輛偵測器
-    getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/VD/City/"+country+"?%24format=JSON", f"CountryVD-{country}")
+    #getkey.getjson("https://tdx.transportdata.tw/api/basic/v2/Road/Traffic/VD/City/"+country+"?%24format=JSON", f"CountryVD-{country}")
     with open(f'data/CountryVD-{country}.json', 'r', encoding='utf-8') as f:
         CountryVD = json.load(f)
     
@@ -27,9 +30,9 @@ def getCountryData(country):
     pd_CountryCongestion = pd.DataFrame(CountryCongestion)
     pd_CountryCongestion = pd.DataFrame(pd_CountryCongestion['LiveTraffics'])
     pd_CountryCongestion['SectionID'] = pd_CountryCongestion['LiveTraffics'].apply(lambda x: x['SectionID'])
-    pd_CountryCongestion['CongestionLevel'] = pd_CountryCongestion['LiveTraffics'].apply(lambda x: x['CongestionLevel'])
+    pd_CountryCongestion['CongestionLevel'] = pd_CountryCongestion['LiveTraffics'].apply(lambda x: x['TravelSpeed'] if x['TravelSpeed']<=0  else (100-int(x['TravelSpeed']) )  )
     pd_CountryCongestion = pd_CountryCongestion.drop(columns='LiveTraffics')
-  
+    #print(pd_CountryCongestion.to_dict())
 
     #縣市發布路段整理
     pd_CountrySection = pd.DataFrame(CountrySection)
@@ -40,7 +43,7 @@ def getCountryData(country):
     pd_CountrySection = pd_CountrySection.explode('LinkIDs')
     pd_CountrySection['LinkID'] = pd_CountrySection['LinkIDs'].apply(lambda x: x['LinkID'] if isinstance(x, dict) else "")
     pd_CountrySection = pd_CountrySection.drop(columns = 'LinkIDs')
-    print(pd_CountrySection.to_dict())
+    #print(pd_CountrySection.to_dict())
     #縣市車輛偵測器整理
     pd_CountryVD = pd.DataFrame(CountryVD)
     pd_CountryVD = pd.DataFrame(pd_CountryVD, columns=['VDs'])
@@ -50,9 +53,10 @@ def getCountryData(country):
     pd_CountryVD['PositionLon'] = pd_CountryVD['VDs'].apply(lambda x : x['PositionLon'])
     pd_CountryVD = pd_CountryVD.drop(columns='VDs')
     pd_CountryVD = pd_CountryVD.explode('DetectionLinks')
+    pd_CountryVD = pd_CountryVD.dropna(subset=['DetectionLinks'])
     pd_CountryVD['LinkID'] = pd_CountryVD['DetectionLinks'] .apply(lambda x: x['LinkID'])
     pd_CountryVD = pd_CountryVD.drop(columns='DetectionLinks')
-    print(pd_CountryVD.to_dict())
+    #print(pd_CountryVD.to_dict())
     pd_CountryVD.fillna("", inplace=True)
     
     
@@ -66,9 +70,10 @@ def getCountryData(country):
     #因為congestion level等於99的話，代表未開放通行，所以我刪掉這部分數據
     CountryData['CongestionLevel'].fillna(0, inplace=True)
     CountryData['CongestionLevel'] = CountryData['CongestionLevel'].astype(int)
-    CountryData = CountryData[CountryData['CongestionLevel'] != -99]
-
-    return {"country":country, "data":CountryData.to_dict()}
+    CountryData = CountryData[CountryData['CongestionLevel'] > 0]
+    combine = {"country":country, "data":CountryData.to_dict()}
+    #print(combine)
+    return combine
 
 def getHighwayData():
     # 抓省道即時發布路況
@@ -88,7 +93,7 @@ def getHighwayData():
     pd_Congestion = pd.DataFrame(Congestion)
     LiveTraffics = pd.DataFrame(pd_Congestion['LiveTraffics'])
     LiveTraffics['SectionID'] = LiveTraffics['LiveTraffics'].apply(lambda x: x['SectionID'])
-    LiveTraffics['CongestionLevel'] = LiveTraffics['LiveTraffics'].apply(lambda x: x['CongestionLevel']*2)
+    LiveTraffics['CongestionLevel'] = LiveTraffics['LiveTraffics'].apply(lambda x: 100-(int(x['CongestionLevel'])  * x['TravelSpeed']))
     HighwayCongestion = LiveTraffics.drop(columns='LiveTraffics')
 
     #省道發布路段資料整理

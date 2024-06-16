@@ -64,18 +64,7 @@
 
 
 
-    //fit map function
-    function fitMapToLayer(layer) {
-          layer = layer.target
-          
-            if (layer.getBounds) {
-                map.fitBounds(layer.getBounds());
-            } else if (layer.getLatLng) {
-              console.log('here');
-                map.setView([23.800983, 120.772569], 7.3);// 你可以調整縮放級別
-            }
-        }
-
+    
     // 初始加載
     updateHeatmap();
     getCCTV('CCTV', CCTV_Group)

@@ -12,15 +12,17 @@ const parseCCTV = (data, group) => {
   data.forEach((element) => {
     var popContent = `
     <div style="width:400px;height:300px;">
-    <h2>${
+    <h2 class="myhead">${
       element.RoadName != ""
         ? element.RoadName
         : element.SurveillanceDescription
     }</h2>
-                      <iframe src="${
-                        element.VideoStreamURL
-                      }" style="min-width: 100%; min-height: 100%;" frameborder="0" allowfullscreen></iframe>
-                      </div>`;
+      <div style="min-width: 360px; min-height: 280px;" >
+        <iframe style="min-width: 360px; min-height: 260px;"  src="${
+          element.VideoStreamURL
+        }" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>`;
 
     var marker = L.marker([element.PositionLat, element.PositionLon], {
       icon: MarkerIcon,
@@ -42,8 +44,8 @@ const parsescenic = (data, group) => {
     markerColor: "blue",
   });
   data.forEach((element) => {
-    var popContent = `    <div style="width:200px;height:100px;background='green'">
-          <h3> ${element.ScenicSpotName}</h3>
+    var popContent = `    <div style="width:400px;height:200px;background='green'">
+          <h2  class="myhead"> ${element.ScenicSpotName}</h2>
           <p>  ${element.DescriptionDetail.substring(0, 100) + " ......"}  </p>
           </div>`;
     var marker = L.marker([element.PositionLat, element.PositionLon], {
@@ -64,12 +66,10 @@ const parseattractions = (data, group) => {
     markerColor: "orange",
   });
   data.forEach((element) => {
-    var popContent = `    <div style="width:200px;height:300px;background='green'">
-            <h3> ${element.AttractionName}</h3>
+    var popContent = `    <div style="width:400px;height:300px;background='green'">
+            <h2  class="myhead"> ${element.AttractionName}</h2>
             <p>  ${element.Description.substring(0, 100) + " ......"}  </p>
-            <img src='${
-              element.Images[0].URL
-            }'  style="max-width: 100%; max-height: 100%;"/>
+            <img src='${element.Images[0].URL}'  class="scenice-pic"/>
             </div>`;
     var marker = L.marker([element.PositionLat, element.PositionLon], {
       icon: redMarkerIcon,
@@ -82,40 +82,26 @@ const parseattractions = (data, group) => {
   });
 };
 //景點活動位置get
-const getactivity = (group) => {
-  fetch(`${flask_ip}/attractions_activity`)
-    .then((response) => response.json())
-    .then((data) => {
-      parseactivity(data, group);
-    })
-    .catch((error) => console.error("Error fetching data:", error));
-};
+
 const parseactivity = (data, group) => {
-  var layerGroup = L.featureGroup();
+  group.clearLayers();
 
   var redMarkerIcon = L.AwesomeMarkers.icon({
     icon: "info-sign",
     markerColor: "green",
   });
   data.forEach((element) => {
-    // // console.log(element);
-    // if (isDateInThePast(element.startTime)) {
-    //   //   console.log(element.startTime);
-    // } else console.log("ddd");
-    var popContent = `    <div style="width:200px;height:100px;background='green'">
-              <h5> ${element.ActivityName}</h5>
+    var popContent = `    <div style="width:400px;height:200px;background='green'">
+              <h2  class="myhead"> ${element.ActivityName}</h2>
               <p>  ${
                 element.Description == "無"
-                  ? ""
+                  ? element.Description
                   : element.Description.substring(0, 100) + " ......"
               }  </p>
               </div>`;
-    var marker = L.marker(
-      [element.Position.PositionLat, element.Position.PositionLon],
-      {
-        icon: redMarkerIcon,
-      }
-    );
+    var marker = L.marker([element.PositionLat, element.PositionLon], {
+      icon: redMarkerIcon,
+    });
     marker.bindPopup(popContent, {
       maxWidth: 1800,
       lazy: true,
@@ -125,64 +111,33 @@ const parseactivity = (data, group) => {
   });
 };
 
-const isDateInThePast = (dateString) => {
-  var inputDate = new Date(dateString);
-  var now = new Date();
-  //   console.log(inputDate);
-  //   console.log(now);
-  return inputDate < now;
-};
-
 // 獲取數據並更新熱圖
 const updateHeatmap = (data) => {
   if (heatLayer) {
     map.removeLayer(heatLayer);
   }
-  heatLayer = L.heatLayer(data, { radius: 60 }).addTo(map);
+  heatLayer = L.heatLayer(data, { radius: 80, blur: 60 }).addTo(map);
 };
 
-const clickAPI = (event) => {
-  alert(event.latlng);
-  const clickLatLng = event.latlng;
-  const markersWithin10Km = [];
-
-  highway_Group.eachLayer((layer) => {
-    const markerLatLng = layer.getLatLng();
-    const distance = map.distance(clickLatLng, markerLatLng);
-
-    if (distance <= 10000) {
-      // 10公里範圍內
-      markersWithin10Km.push(layer);
-    }
-
-    // 清除以前的標示
-    highway_Group.eachLayer((layer) => {
-      layer.setIcon(new L.Icon.Default());
-    });
-
-    // 標示10公里範圍內的點
-    markersWithin10Km.forEach((marker) => {
-      marker.setIcon(
-        new L.Icon({
-          iconUrl: "https://leafletjs.com/examples/custom-icons/leaf-red.png",
-          shadowUrl:
-            "https://leafletjs.com/examples/custom-icons/leaf-shadow.png",
-          iconSize: [38, 95], // size of the icon
-          shadowSize: [50, 64], // size of the shadow
-          iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
-          shadowAnchor: [4, 62], // the same for the shadow
-          popupAnchor: [-3, -76], // point from which the popup should open relative to the iconAnchor
-        })
-      );
-    });
+// 獲取數據並更新熱圖
+const updateCountryHeatmap = (data) => {
+  var clean_data = [];
+  data.forEach((element) => {
+    clean_data.push([
+      element.PositionLat,
+      element.PositionLon,
+      element.CongestionLevel,
+    ]);
   });
+  console.log(clean_data);
+  heatLayer = L.heatLayer(clean_data, { radius: 80, blur: 60 }).addTo(map);
 };
 
 const clickSearch = (event) => {
   const lat = event.latlng.lat.toFixed(5);
   const lng = event.latlng.lng.toFixed(5);
-  alert(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
-
+  //alert(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
+  console.log(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
   var Herecon = L.icon({
     iconUrl: "./hereicon.png",
     iconSize: [38, 38], // 图标大小
@@ -227,14 +182,42 @@ const clickSearch = (event) => {
       parseattractions(data, attraction_Group);
     })
     .catch((error) => console.error("Error fetching attractions data:", error));
+  //fetch attractions activities
+  fetch(`${flask_ip}/attractions_activity?lat=${lat}&lng=${lng}`)
+    .then((response) => response.json())
+    .then((data) => {
+      parseactivity(data, activity_Group);
+    })
+    .catch((error) => console.error("Error fetching attractions data:", error));
 
   //fetch heatdata
+
   fetch(`${flask_ip}/heatdata?lat=${lat}&lng=${lng}`)
     .then((response) => response.json())
     .then((data) => {
+      console.log(data);
       updateHeatmap(data, heatLayer);
     })
     .catch((error) => console.error("Error fetching heatdata data:", error));
+
+  // fetch(`${flask_ip}/countryheatdata?lat=${lat}&lng=${lng}`)
+  //   .then((response) => response.json())
+  //   .then((data) => {
+  //     console.log(data);
+  //     updateCountryHeatmap(data, heatLayer);
+  //   })
+  //   .catch((error) => console.error("Error fetching heatdata data:", error));
+};
+
+const updateDate = (data_name, out_name) => {
+  fetch(`${flask_ip}/update?${data_name}=1`)
+    .then((response) => response.json())
+    .then((data) => {
+      alert(`更新${out_name}資料成功`);
+    })
+    .catch((error) =>
+      console.error(`Error fetching ${data_name} data:`, error)
+    );
 };
 
 //fit map function
