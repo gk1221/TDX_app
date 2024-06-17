@@ -93,7 +93,7 @@ def getHighwayData():
     pd_Congestion = pd.DataFrame(Congestion)
     LiveTraffics = pd.DataFrame(pd_Congestion['LiveTraffics'])
     LiveTraffics['SectionID'] = LiveTraffics['LiveTraffics'].apply(lambda x: x['SectionID'])
-    LiveTraffics['CongestionLevel'] = LiveTraffics['LiveTraffics'].apply(lambda x: 100-(int(x['CongestionLevel'])  * x['TravelSpeed']))
+    LiveTraffics['CongestionLevel'] = LiveTraffics['LiveTraffics'].apply(lambda x: 100-int(x['TravelSpeed']) if x['TravelSpeed']>0  else -1  )
     HighwayCongestion = LiveTraffics.drop(columns='LiveTraffics')
 
     #省道發布路段資料整理
