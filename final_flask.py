@@ -84,21 +84,21 @@ def get_update():
             finally:
                 time.sleep(0.5)
     
-        #VD in country        
-        countrydata = []
-        for city in citylist:
-            try:
-                countrydata.append(func.getCountryData(city)) 
-                print(f"---------{city}-VD has been add to CountryData--------")
-            except Exception as e:
-                print(f"---------{city}-VD Update failed--------")
-                print(e)
-            finally:
-                time.sleep(0.5)
+        # #VD in country        
+        # countrydata = []
+        # for city in citylist:
+        #     try:
+        #         countrydata.append(func.getCountryData(city)) 
+        #         print(f"---------{city}-VD has been add to CountryData--------")
+        #     except Exception as e:
+        #         print(f"---------{city}-VD Update failed--------")
+        #         print(e)
+        #     finally:
+        #         time.sleep(0.5)
     
-        with open('data/CountryData.json', 'w') as file:
-            file.write('')  # 清空文件内容
-            file.write(json.dumps(countrydata, ensure_ascii=False))
+        # with open('data/CountryData.json', 'w') as file:
+        #     file.write('')  # 清空文件内容
+        #     file.write(json.dumps(countrydata, ensure_ascii=False))
             
                 
         print("--------------VD Data Updated------------------------")

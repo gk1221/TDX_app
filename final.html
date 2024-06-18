@@ -14,9 +14,11 @@
   </link>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-
+  
   <!-- icon -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
   <script
     src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
@@ -36,20 +38,46 @@
 </head>
 
 <body>
-  <div class="button-container">
+  <div class="button-container button-top">
     <button class="btn btn-primary mybtn" onclick="updateDate('VD', '交通')">更新交通資料</button>
     <button class="btn btn-success mybtn" onclick="updateDate('spot', '景點')">更新景點資料</button>
     <button class="btn btn-warning mybtn" onclick="updateDate('CCTV', '監視器')">更新監視器資料</button>
-</div>
-  <div id="map">
-    
   </div>
+
+  <div class="canvas-container button-top">
+    <button class="btn btn-secondary mybtn toggleButton"  >▶</button>
+  </div>
+
+  <div id="showbox" class="canvas-container button-up hidden showbox button-top">
+    <div style="text-align: center;font-weight: bold;font-size: 32px;" >最近的景點</div>
+    <div style=" display: flex;    align-items: center;    justify-content: space-between;margin-top: 5px;">
+    <div class="attraction-info button-top">
+      <table  id="myTable">
+        <thead>
+          <tr>
+            <th><strong>景點名稱</strong></th>
+            <th style="width:70px"><strong>距離</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+      </table>
+    </div>
+    <div >
+      <button class="btn btn-secondary mybtn toggleButton">✖</button>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="map"></div>
 
   <script>
     // 初始化地圖
     var map = L.map('map').setView([23.800983, 120.772569], 7);
 
-
+    
 
     // 添加地圖圖層
     var baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -69,7 +97,7 @@
     var heatLayer = L.featureGroup();
 
 
-
+    var showdata = [];
     
     
 
@@ -90,10 +118,32 @@
     var layersControl = L.control.layers(null, overlays,{collapsed:false}).addTo(map);
 
     //針對地圖增加點擊行為
-    map.on('click' ,(e)=> clickSearch(e));
+    map.on('click' ,(e)=> {
+      clickSearch(e);
+      setTimeout(()=>parseRecommand(), 1500);
+    });
   
 
-    
+// 添加點擊事件監聽器
+const toggleButton = document.getElementsByClassName('toggleButton');
+const box = document.getElementById('showbox');
+const table = document.getElementById("myTable");
+const tbody = table.querySelector("tbody");
+
+const buttontoggle = ()=>{
+  // 檢查 box 的顯示狀態
+  if (box.classList.contains('hidden')) {
+    // 如果 box 是隱藏的，則顯示它
+    box.classList.remove('hidden');
+  } else {
+    // 如果 box 是顯示的，則隱藏它
+    box.classList.add('hidden');
+  }
+}
+
+toggleButton[0].addEventListener('click', buttontoggle) 
+toggleButton[1].addEventListener('click', buttontoggle) 
+
     
 
  

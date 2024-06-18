@@ -94,12 +94,14 @@ def getHighwayData():
     LiveTraffics = pd.DataFrame(pd_Congestion['LiveTraffics'])
     LiveTraffics['SectionID'] = LiveTraffics['LiveTraffics'].apply(lambda x: x['SectionID'])
     LiveTraffics['CongestionLevel'] = LiveTraffics['LiveTraffics'].apply(lambda x: 100-int(x['TravelSpeed']) if x['TravelSpeed']>0  else -1  )
+    LiveTraffics = LiveTraffics[LiveTraffics['CongestionLevel'] > 0]
     HighwayCongestion = LiveTraffics.drop(columns='LiveTraffics')
 
     #省道發布路段資料整理
     pd_Section = pd.DataFrame(Section)
     Sections = pd.DataFrame(pd_Section['Sections'])
     Sections['SectionID'] = Sections['Sections'].apply(lambda x : x['SectionID'])
+    Sections['SectionName'] = Sections['Sections'].apply(lambda x : x['SectionName'])
     Sections['LinkIDs'] = Sections['Sections'].apply(lambda x : x['LinkIDs'])
     Sections = Sections.drop(columns='Sections')
     Sections = Sections.explode('LinkIDs')
@@ -120,7 +122,9 @@ def getHighwayData():
 
     #合併資料
     SectionCongestion = pd.merge(HighwayCongestion,HighwaySection, how='inner', on='SectionID')
+    
     HighwayData = pd.merge(HighwayVD,SectionCongestion, how='inner', on='LinkID')
+
     HighwayData = HighwayData.drop(columns='VDID')
     HighwayData = HighwayData.drop(columns='LinkID')
     HighwayData = HighwayData.drop(columns='SectionID')
@@ -151,7 +155,7 @@ def create_heatmap(lat, lon):
     # 準備熱力圖數據
     heat_data = [[row['PositionLat'], row['PositionLon'], row['CongestionLevel']] for index, row in nearest_points.iterrows()]
     
-    return heat_data 
+    return {"data": heat_data , "roadname": [[row['SectionName']] for index, row in nearest_points.iterrows()]}
     # # 添加熱力圖層，這裡的radius學長可以看要多少比較好
     # HeatMap(heat_data, radius =100).add_to(m)
     

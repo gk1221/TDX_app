@@ -21,9 +21,106 @@ p {
   top: 3%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999; /* 确保按钮在最上层 */
 }
 
 .mybtn {
   margin-left: 10px;
+}
+
+.button-top {
+  z-index: 900; /* 确保按钮在最上层 */
+}
+
+table td,
+table th {
+  padding: 10px;
+  text-align: left;
+  border: none; /* 移除單元格邊框 */
+}
+
+th {
+  font-size: 24;
+}
+
+.distance {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.max-top {
+  z-index: 990; /* 确保按钮在最上层 */
+}
+
+.canvas-container {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+  transform: translate(0, -50%);
+  margin-left: 5px;
+}
+.showbox {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+
+  border-radius: 10px;
+  margin: 0 0 0 5px;
+}
+.togglebutton {
+  margin-right: 5px;
+}
+
+.attraction-info {
+  flex: 1; /* 讓景點資訊佔據左邊空間的一部分 */
+  color: black; /* 設置文字顏色為黑色 */
+}
+/* 整个控件容器的样式 */
+.leaflet-control-layers {
+  background-color: #ffffff; /* 白色背景 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+  font-family: "Arial", sans-serif; /* 字体 */
+  font-size: 14px; /* 字体大小 */
+  padding: 10px; /* 内边距 */
+}
+
+/* 控件标题的样式 */
+.leaflet-control-layers-toggle {
+  background-color: #007bff; /* 蓝色背景 */
+  color: #ffffff; /* 白色字体 */
+  border-radius: 5px; /* 圆角 */
+  padding: 5px 10px; /* 内边距 */
+  cursor: pointer; /* 光标样式 */
+}
+
+/* 图层列表的样式 */
+.leaflet-control-layers-list {
+  margin: 10px 0; /* 外边距 */
+  padding: 0; /* 内边距 */
+}
+
+/* 每个图层项的样式 */
+.leaflet-control-layers-base label,
+.leaflet-control-layers-overlays label {
+  display: block; /* 块级显示 */
+  margin-bottom: 5px; /* 下边距 */
+  padding: 5px; /* 内边距 */
+  background-color: #f8f9fa; /* 浅灰色背景 */
+  border: 1px solid #ddd; /* 边框 */
+  border-radius: 3px; /* 圆角 */
+  cursor: pointer; /* 光标样式 */
+  transition: background-color 0.3s; /* 背景色过渡效果 */
+}
+
+/* 悬停时的样式 */
+.leaflet-control-layers-base label:hover,
+.leaflet-control-layers-overlays label:hover {
+  background-color: #e2e6ea; /* 浅灰色背景 */
+}
+
+/* 选中项的样式 */
+.leaflet-control-layers-base input:checked + label,
+.leaflet-control-layers-overlays input:checked + label {
+  background-color: #007bff; /* 蓝色背景 */
+  color: #ffffff; /* 白色字体 */
 }

@@ -1,6 +1,25 @@
 //pase CCTV
 const flask_ip = "http://127.0.0.1:5000";
 
+// 將資料加入到表格中
+
+const addrowdata = (datas) => {
+  tbody.innerHTML = ``;
+  datas.slice(0, 10).forEach((data) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+
+      <td>${data.name}</td>
+      <td class="distance" onclick='movemap(${data.lat}, ${data.lon})'}>${data.distance}km</td>
+    `;
+    tbody.appendChild(row);
+  });
+};
+
+const movemap = (lat, lon) => {
+  map.panTo([lat, lon]); // 移动地图视图到点击的位置
+};
+
 const parseCCTV = (data, group) => {
   group.clearLayers();
 
@@ -44,6 +63,15 @@ const parsescenic = (data, group) => {
     markerColor: "blue",
   });
   data.forEach((element) => {
+    showdata = [
+      ...showdata,
+      {
+        distance: element.DistanceToInputPoint_km.toFixed(1),
+        name: element.ScenicSpotName,
+        lat: element.PositionLat,
+        lon: element.PositionLon,
+      },
+    ];
     var popContent = `    <div style="width:400px;height:200px;background='green'">
           <h2  class="myhead"> ${element.ScenicSpotName}</h2>
           <p>  ${element.DescriptionDetail.substring(0, 100) + " ......"}  </p>
@@ -61,11 +89,22 @@ const parsescenic = (data, group) => {
 
 const parseattractions = (data, group) => {
   group.clearLayers();
+
   var redMarkerIcon = L.AwesomeMarkers.icon({
     icon: "info-sign",
     markerColor: "orange",
   });
   data.forEach((element) => {
+    showdata = [
+      ...showdata,
+      {
+        distance: element.DistanceToInputPoint_km.toFixed(1),
+        name: element.AttractionName,
+        lat: element.PositionLat,
+        lon: element.PositionLon,
+      },
+    ];
+
     var popContent = `    <div style="width:400px;height:300px;background='green'">
             <h2  class="myhead"> ${element.AttractionName}</h2>
             <p>  ${element.Description.substring(0, 100) + " ......"}  </p>
@@ -91,6 +130,16 @@ const parseactivity = (data, group) => {
     markerColor: "green",
   });
   data.forEach((element) => {
+    showdata = [
+      ...showdata,
+      {
+        distance: element.DistanceToInputPoint_km.toFixed(1),
+        name: element.ActivityName,
+        lat: element.PositionLat,
+        lon: element.PositionLon,
+      },
+    ];
+
     var popContent = `    <div style="width:400px;height:200px;background='green'">
               <h2  class="myhead"> ${element.ActivityName}</h2>
               <p>  ${
@@ -116,7 +165,10 @@ const updateHeatmap = (data) => {
   if (heatLayer) {
     map.removeLayer(heatLayer);
   }
-  heatLayer = L.heatLayer(data, { radius: 80, blur: 60 }).addTo(map);
+  heatLayer = L.heatLayer(data, {
+    radius: 80,
+    blur: 60,
+  }).addTo(map);
 };
 
 // 獲取數據並更新熱圖
@@ -133,7 +185,18 @@ const updateCountryHeatmap = (data) => {
   heatLayer = L.heatLayer(clean_data, { radius: 80, blur: 60 }).addTo(map);
 };
 
+const parseRecommand = () => {
+  showdata.sort((a, b) => {
+    if (a.distance < b.distance) {
+      return -1;
+    }
+  });
+
+  addrowdata(showdata);
+};
+
 const clickSearch = (event) => {
+  showdata = [];
   const lat = event.latlng.lat.toFixed(5);
   const lng = event.latlng.lng.toFixed(5);
   //alert(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
@@ -195,8 +258,8 @@ const clickSearch = (event) => {
   fetch(`${flask_ip}/heatdata?lat=${lat}&lng=${lng}`)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data);
-      updateHeatmap(data, heatLayer);
+      //console.log(data["data"]);
+      updateHeatmap(data["data"], heatLayer);
     })
     .catch((error) => console.error("Error fetching heatdata data:", error));
 
