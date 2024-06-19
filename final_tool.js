@@ -161,14 +161,22 @@ const parseactivity = (data, group) => {
 };
 
 // 獲取數據並更新熱圖
-const updateHeatmap = (data) => {
-  if (heatLayer) {
-    map.removeLayer(heatLayer);
-  }
-  heatLayer = L.heatLayer(data, {
-    radius: 80,
-    blur: 60,
-  }).addTo(map);
+const updateHeatmap = () => {
+  console.log(all_lat, all_lon);
+  fetch(`${flask_ip}/heatdata?lat=${all_lat}&lng=${all_lon}`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data["data"]);
+
+      if (heatLayer) {
+        map.removeLayer(heatLayer);
+      }
+      heatLayer = L.heatLayer(data["data"], {
+        radius: 80,
+        blur: 60,
+      }).addTo(map);
+    })
+    .catch((error) => console.error("Error fetching heatdata data:", error));
 };
 
 // 獲取數據並更新熱圖
@@ -188,7 +196,7 @@ const updateCountryHeatmap = (data) => {
 const parseRecommand = () => {
   showdata.sort((a, b) => {
     if (a.distance < b.distance) {
-      return -1;
+      return 1;
     }
   });
 
@@ -198,7 +206,9 @@ const parseRecommand = () => {
 const clickSearch = (event) => {
   showdata = [];
   const lat = event.latlng.lat.toFixed(5);
+  all_lat = lat;
   const lng = event.latlng.lng.toFixed(5);
+  all_lon = lng;
   //alert(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
   console.log(`搜尋位置\n經度 ： ${lat}\n緯度 ： ${lng}`);
   var Herecon = L.icon({

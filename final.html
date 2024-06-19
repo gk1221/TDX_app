@@ -45,7 +45,7 @@
   </div>
 
   <div class="canvas-container button-top">
-    <button class="btn btn-secondary mybtn toggleButton"  >▶</button>
+    <button class="btn btn-light  toggleButton"  >▶</button>
   </div>
 
   <div id="showbox" class="canvas-container button-up hidden showbox button-top">
@@ -65,7 +65,7 @@
       </table>
     </div>
     <div >
-      <button class="btn btn-secondary mybtn toggleButton">✖</button>
+      <button class="btn btn-light mybtn toggleButton">✖</button>
     </div>
   </div>
   </div>
@@ -99,7 +99,8 @@
 
     var showdata = [];
     
-    
+    var all_lat=0;
+    var all_lon=0;
 
 
     var overlays = {
@@ -122,6 +123,8 @@
       clickSearch(e);
       setTimeout(()=>parseRecommand(), 1500);
     });
+
+    setInterval(()=>updateHeatmap(), 3000)
   
 
 // 添加點擊事件監聽器

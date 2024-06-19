@@ -56,7 +56,6 @@ th {
   top: 50%;
   left: 1%;
   transform: translate(0, -50%);
-  margin-left: 5px;
 }
 .showbox {
   width: 400px;
