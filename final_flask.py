@@ -246,6 +246,13 @@ def get_heatdata():
     data = func.create_heatmap(lat, lng)
     return jsonify(data)
 
+@app.route('/allheatdata' , methods=['GET'])
+def get_heatdata2():
+    lat = request.args.get('lat')
+    lng = request.args.get('lng')
+    data = func.create_heatmap2(lat, lng)
+    return jsonify(data)
+
 @app.route('/countryheatdata' , methods=['GET'])
 def get_country_heatdata():
     lat = request.args.get('lat')

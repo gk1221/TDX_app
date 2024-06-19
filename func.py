@@ -163,7 +163,31 @@ def create_heatmap(lat, lon):
     # m.save('heatmap.html')
     # return m
 
+def create_heatmap2(lat, lon):
+    nearest_points = find_nearest_points2(lat, lon)
+    
+    # 創建地圖
+    #m = folium.Map(location=[lat, lon], zoom_start=12)
+    
+    # 調整型態
+    nearest_points['PositionLat'] = nearest_points['PositionLat'].astype(float)
+    nearest_points['PositionLon'] = nearest_points['PositionLon'].astype(float)
+    nearest_points['CongestionLevel'] = nearest_points['CongestionLevel'].astype(float)
 
+    # 準備熱力圖數據
+    heat_data = [[row['PositionLat'], row['PositionLon'], row['CongestionLevel']] for index, row in nearest_points.iterrows()]
+    
+    return {"data": heat_data , "roadname": [[row['SectionName']] for index, row in nearest_points.iterrows()]}
+    
+def find_nearest_points2(lat, lon):
+    #除去重複數據，我也不曉得為什麼有重複的，後來發現是抓的資料會有重複的，現在不曉得是什麼原因
+    data = getHighwayData()
+    data = data.drop_duplicates(subset=['PositionLat', 'PositionLon'])
+    # 計算距離
+    data['distance'] = data.apply(lambda row: geodesic((lat, lon), (row['PositionLat'], row['PositionLon'])).meters, axis=1)
+    # 按距離排序並取前 20 點
+    
+    return data
 # # 示例使用
 # lat = 23.5 # 替換為你的緯度
 # lon = 120.5  # 替換為你的經度

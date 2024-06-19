@@ -63,10 +63,11 @@ th {
   background-color: white;
 
   border-radius: 10px;
-  margin: 0 0 0 5px;
+  margin: 0 0 0 0px;
 }
 .togglebutton {
   margin-right: 5px;
+  background-color: rgb(237, 237, 237);
 }
 
 .attraction-info {

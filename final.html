@@ -6,7 +6,7 @@
 
 <head>
 
-  
+
   <link rel="icon" type="image/x-icon" href="user.png">
 
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,7 +14,7 @@
   </link>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-  
+
   <!-- icon -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
@@ -29,7 +29,7 @@
   <!-- heatjs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
   <!-- mytool -->
-  <script src="final_tool.js" ></script>
+  <script src="final_tool.js"></script>
   <link rel="stylesheet" href="final.css">
 
   <style>
@@ -45,29 +45,29 @@
   </div>
 
   <div class="canvas-container button-top">
-    <button class="btn btn-light  toggleButton"  >▶</button>
+    <button class="btn btn-light  toggleButton">▶</button>
   </div>
 
-  <div id="showbox" class="canvas-container button-up hidden showbox button-top">
-    <div style="text-align: center;font-weight: bold;font-size: 32px;" >最近的景點</div>
+  <div id="showbox" class="canvas-container hidden showbox button-top">
+    <div style="text-align: center;font-weight: bold;font-size: 32px;">最近的景點</div>
     <div style=" display: flex;    align-items: center;    justify-content: space-between;margin-top: 5px;">
-    <div class="attraction-info button-top">
-      <table  id="myTable">
-        <thead>
-          <tr>
-            <th><strong>景點名稱</strong></th>
-            <th style="width:70px"><strong>距離</strong></th>
-          </tr>
-        </thead>
-        <tbody>
-        
-        </tbody>
-      </table>
+      <div class="attraction-info button-top">
+        <table id="myTable">
+          <thead>
+            <tr>
+              <th><strong>景點名稱</strong></th>
+              <th style="width:70px"><strong>距離</strong></th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <button class="btn btn-light mybtn toggleButton">✖</button>
+      </div>
     </div>
-    <div >
-      <button class="btn btn-light mybtn toggleButton">✖</button>
-    </div>
-  </div>
   </div>
 
 
@@ -75,9 +75,9 @@
 
   <script>
     // 初始化地圖
-    var map = L.map('map').setView([23.800983, 120.772569], 7);
+    var map = L.map('map').setView([23.800983, 120.772569], 8);
 
-    
+
 
     // 添加地圖圖層
     var baseLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -98,58 +98,95 @@
 
 
     var showdata = [];
-    
-    var all_lat=0;
-    var all_lon=0;
+
+    var all_lat = 0;
+    var all_lon = 0;
 
 
     var overlays = {
-            "縣市監視器": CCTV_Group,
-            "高速公路監視器": highway_Group,
-            "景點": attraction_Group,
-            "風景": scenic_Group,
-            "景點活動":activity_Group,
+      "縣市監視器": CCTV_Group,
+      "高速公路監視器": highway_Group,
+      "景點": attraction_Group,
+      "風景": scenic_Group,
+      "景點活動": activity_Group,
 
-        };
+    };
 
-        Object.values(overlays).forEach(layer=> {
-            map.addLayer(layer)
-            // 你可以在这里对 layerGroup 进行更多处理
-        })
-    var layersControl = L.control.layers(null, overlays,{collapsed:false}).addTo(map);
+    Object.values(overlays).forEach(layer => {
+      map.addLayer(layer)
+      // 你可以在这里对 layerGroup 进行更多处理
+    })
+    var layersControl = L.control.layers(null, overlays, { collapsed: false }).addTo(map);
 
     //針對地圖增加點擊行為
-    map.on('click' ,(e)=> {
+    map.on('click', (e) => {
       clickSearch(e);
-      setTimeout(()=>parseRecommand(), 1500);
+      setTimeout(() => parseRecommand(), 1500);
     });
 
-    setInterval(()=>updateHeatmap(), 3000)
-  
+    updateHeatmap_all()
+    const starttime = setInterval(async() => {
+      
+      try {
+        // 發送 GET 請求並等待響應
+        const response = await fetch(`${flask_ip}/update?VD=1`);
 
-// 添加點擊事件監聽器
-const toggleButton = document.getElementsByClassName('toggleButton');
-const box = document.getElementById('showbox');
-const table = document.getElementById("myTable");
-const tbody = table.querySelector("tbody");
+        // 檢查響應狀態
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
 
-const buttontoggle = ()=>{
-  // 檢查 box 的顯示狀態
-  if (box.classList.contains('hidden')) {
-    // 如果 box 是隱藏的，則顯示它
-    box.classList.remove('hidden');
-  } else {
-    // 如果 box 是顯示的，則隱藏它
-    box.classList.add('hidden');
-  }
-}
+        // 將響應解析為 JSON
+        const data = await response.json();
 
-toggleButton[0].addEventListener('click', buttontoggle) 
-toggleButton[1].addEventListener('click', buttontoggle) 
+        // 處理獲取到的數據
+        console.log(data);
+        // 在這裡可以對獲取到的數據進行處理，例如更新 DOM
+    } catch (error) {
+        // 處理錯誤
+        console.error('There has been a problem with your fetch operation:', error);
+    }
 
-    
+    updateHeatmap_all();
 
- 
+    }, 10000)
+
+
+    const colors = ["#575757", "#a3a3a3", "#f69730", "#38aadd", "#73af26"];
+
+    // 選擇目標div中的所有span元素
+    const labels = document.querySelectorAll('.leaflet-control-layers-overlays label');
+
+    // 為每個span元素設置背景顏色
+    labels.forEach((span, index) => {
+      // 使用模運算符確保顏色陣列中的顏色循環使用
+      span.style.backgroundColor = colors[index % colors.length];
+    });
+
+
+    // 添加點擊事件監聽器
+    const toggleButton = document.getElementsByClassName('toggleButton');
+    const box = document.getElementById('showbox');
+    const table = document.getElementById("myTable");
+    const tbody = table.querySelector("tbody");
+
+    const buttontoggle = () => {
+      // 檢查 box 的顯示狀態
+      if (box.classList.contains('hidden')) {
+        // 如果 box 是隱藏的，則顯示它
+        box.classList.remove('hidden');
+      } else {
+        // 如果 box 是顯示的，則隱藏它
+        box.classList.add('hidden');
+      }
+    }
+
+    toggleButton[0].addEventListener('click', buttontoggle)
+    toggleButton[1].addEventListener('click', buttontoggle)
+
+
+
+
   </script>
 </body>
 
